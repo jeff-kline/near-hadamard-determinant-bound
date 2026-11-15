@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/Y0OJhTwIw8TNVP4zjQ2SL08FiiM</id>
+  <title>arXiv Query: search_query=all:"near-Hadamard" OR (all:Momihara AND all:determinant) OR (abs:"Ehlich" AND abs:determinant)&amp;id_list=&amp;start=0&amp;max_results=30</title>
+  <updated>2026-11-15T18:32:11Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22near-Hadamard%22+OR+((all:Momihara+AND+all:determinant)+OR+(abs:%22Ehlich%22+AND+abs:determinant))&amp;start=0&amp;max_results=30&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>30</opensearch:itemsPerPage>
+  <opensearch:totalResults>4</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/1311.2637v1</id>
+    <title>Self-Dual codes from $(-1,1)$-matrices of skew symmetric type</title>
+    <updated>2013-11-11T22:38:10Z</updated>
+    <link href="https://arxiv.org/abs/1311.2637v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1311.2637v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Previously, self-dual codes have been constructed from weighing matrices, and in particular from conference matrices (skew and symmetric). In this paper, codes constructed from matrices of skew symmetric type whose determinants reach the Ehlich-Wojtas' bound are presented. A necessary and sufficient condition for these codes to be self-dual is given, and examples are provided for lengths up to 52.</summary>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2013-11-11T22:38:10Z</published>
+    <arxiv:primary_category term="cs.IT"/>
+    <author>
+      <name>José Andrés Armario</name>
+    </author>
+    <author>
+      <name>María Dolores Frau</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1206.3354v1</id>
+    <title>Evaluation of the weight distribution of a class of cyclic codes based on index 2 Gauss sums</title>
+    <updated>2012-06-15T01:09:16Z</updated>
+    <link href="https://arxiv.org/abs/1206.3354v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1206.3354v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The duals of cyclic codes with two zeros have been extensively studied, and their weight distributions have recently been evaluated in some cases. In this note, we determine the weight distribution of a certain new class of such codes by computations involving index 2 Gauss sums.</summary>
+    <category term="math.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2012-06-15T01:09:16Z</published>
+    <arxiv:comment>9 pages</arxiv:comment>
+    <arxiv:primary_category term="math.CO"/>
+    <author>
+      <name>Tao Feng</name>
+    </author>
+    <author>
+      <name>Koji Momihara</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1112.4671v5</id>
+    <title>Finding D-optimal designs by randomised decomposition and switching</title>
+    <updated>2012-08-11T06:37:39Z</updated>
+    <link href="https://arxiv.org/abs/1112.4671v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1112.4671v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The Hadamard maximal determinant (maxdet) problem is to find the maximum determinant D(n) of a square {+1, -1} matrix of given order n. Such a matrix with maximum determinant is called a saturated D-optimal design. We consider some cases where n &gt; 2 is not divisible by 4, so the Hadamard bound is not attainable, but bounds due to Barba or Ehlich and Wojtas may be attainable. If R is a matrix with maximal (or conjectured maximal) determinant, then G = RR^T is the corresponding Gram matrix. For the cases that we consider, maximal or conjectured maximal Gram matrices are known. We show how to generate many Hadamard equivalence classes of solutions from a given Gram matrix G, using a randomised decomposition algorithm and row/column switching. In particular, we consider orders 26, 27 and 33, and obtain new saturated D-optimal designs (for order 26) and new conjectured saturated D-optimal designs (for orders 27 and 33).</summary>
+    <category term="math.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2011-12-20T12:41:50Z</published>
+    <arxiv:comment>18 pages, 3 figures, 5 tables (figures corrected in v4). v5 added a reference and made minor improvements. Presented at the International Workshop on Hadamard Matrices held in honour of Kathy Horadam's 60th birthday, Melbourne, Nov. 2011. Data files are available at http://maths.anu.edu.au/~brent/maxdet/</arxiv:comment>
+    <arxiv:primary_category term="math.CO"/>
+    <arxiv:journal_ref>Australasian Journal of Combinatorics 55 (2013), 15-30. Erratum http://maths-people.anu.edu.au/~brent/pub/pub245_errata.html</arxiv:journal_ref>
+    <author>
+      <name>Richard P. Brent</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/math/0401179v1</id>
+    <title>The maximal {-1,1}-determinant of order 15</title>
+    <updated>2004-01-15T11:00:03Z</updated>
+    <link href="https://arxiv.org/abs/math/0401179v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/math/0401179v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  We study the question of finding the maximal determinant of matrices of odd order with entries {-1,1}. The most general upper bound on the maximal determinant, due to Barba, can only be achieved when the order is the sum of two consecutive squares. It is conjectured that the bound is always attained in such cases. Apart from these, only in orders 3, 7, 9, 11, 17 and 21 has the maximal value been established. In this paper we confirm the results for these orders, and add order 15 to the list. We follow previous authors in exhaustively searching for candidate Gram matrices having determinant greater than or equal to the square of a known lower bound on the maximum. We then attempt to decompose each candidate as the product of a {-1,1}-matrix and its transpose. For order 15 we find four candidates, all of Ehlich block form, two having determinant (105*3^5*2^14)^2 and the others determinant (108*3^5*2^14)^2. One of the former decomposes (in an essentially unique way) while the remaining three do not. This result proves a conjecture made independently by W. D. Smith and J. H. E. Cohn. We also use our method to compute improved upper bounds on the maximal determinant in orders 29, 33, and 37, and to establish the range of the determinant function of {-1,1}-matrices in orders 9 and 11.</summary>
+    <category term="math.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2004-01-15T11:00:03Z</published>
+    <arxiv:comment>30 pages</arxiv:comment>
+    <arxiv:primary_category term="math.CO"/>
+    <author>
+      <name>William P. Orrick</name>
+    </author>
+  </entry>
+</feed>

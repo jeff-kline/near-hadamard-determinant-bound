@@ -1,0 +1,671 @@
+{
+  "status": "INDEPENDENT CHECKS PASSED",
+  "coverage": [
+    {
+      "q": 29,
+      "factorization": {
+        "29": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": true
+    },
+    {
+      "q": 37,
+      "factorization": {
+        "37": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 41,
+      "factorization": {
+        "41": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 49,
+      "factorization": {
+        "7": 2
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": true
+    },
+    {
+      "q": 53,
+      "factorization": {
+        "53": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 61,
+      "factorization": {
+        "61": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 73,
+      "factorization": {
+        "73": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 81,
+      "factorization": {
+        "3": 4
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 89,
+      "factorization": {
+        "89": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 97,
+      "factorization": {
+        "97": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 101,
+      "factorization": {
+        "101": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 109,
+      "factorization": {
+        "109": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 113,
+      "factorization": {
+        "113": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 121,
+      "factorization": {
+        "11": 2
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 125,
+      "factorization": {
+        "5": 3
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": true
+    },
+    {
+      "q": 137,
+      "factorization": {
+        "137": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 149,
+      "factorization": {
+        "149": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 157,
+      "factorization": {
+        "157": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 169,
+      "factorization": {
+        "13": 2
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 173,
+      "factorization": {
+        "173": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 181,
+      "factorization": {
+        "181": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 193,
+      "factorization": {
+        "193": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 197,
+      "factorization": {
+        "197": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 229,
+      "factorization": {
+        "229": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 233,
+      "factorization": {
+        "233": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 241,
+      "factorization": {
+        "241": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 257,
+      "factorization": {
+        "257": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 269,
+      "factorization": {
+        "269": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 277,
+      "factorization": {
+        "277": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 281,
+      "factorization": {
+        "281": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 289,
+      "factorization": {
+        "17": 2
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 293,
+      "factorization": {
+        "293": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 313,
+      "factorization": {
+        "313": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 317,
+      "factorization": {
+        "317": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 337,
+      "factorization": {
+        "337": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 349,
+      "factorization": {
+        "349": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 353,
+      "factorization": {
+        "353": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 361,
+      "factorization": {
+        "19": 2
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 373,
+      "factorization": {
+        "373": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 389,
+      "factorization": {
+        "389": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 397,
+      "factorization": {
+        "397": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 401,
+      "factorization": {
+        "401": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 409,
+      "factorization": {
+        "409": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 421,
+      "factorization": {
+        "421": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 433,
+      "factorization": {
+        "433": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 449,
+      "factorization": {
+        "449": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 457,
+      "factorization": {
+        "457": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 461,
+      "factorization": {
+        "461": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 509,
+      "factorization": {
+        "509": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 521,
+      "factorization": {
+        "521": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 529,
+      "factorization": {
+        "23": 2
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 541,
+      "factorization": {
+        "541": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 557,
+      "factorization": {
+        "557": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 569,
+      "factorization": {
+        "569": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 577,
+      "factorization": {
+        "577": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 593,
+      "factorization": {
+        "593": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 601,
+      "factorization": {
+        "601": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 613,
+      "factorization": {
+        "613": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 617,
+      "factorization": {
+        "617": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 625,
+      "factorization": {
+        "5": 4
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": true
+    },
+    {
+      "q": 641,
+      "factorization": {
+        "641": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 653,
+      "factorization": {
+        "653": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 661,
+      "factorization": {
+        "661": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": false
+    },
+    {
+      "q": 673,
+      "factorization": {
+        "673": 1
+      },
+      "source_sets": true,
+      "source_Gram": true,
+      "products": true,
+      "full_block": true
+    }
+  ],
+  "finite_fields": 64,
+  "finite_orientations": 128,
+  "sanity_fields": 6,
+  "full_block_parameters": [
+    29,
+    49,
+    125,
+    625,
+    673
+  ],
+  "full_block_order_max": 674,
+  "q13_negative_control": true,
+  "determinant_corruption_rejected": true,
+  "shared_library": "python-flint for nmod_poly and exact fmpz resultants/determinants; no project implementation imports",
+  "cpu_seconds": 20.26342,
+  "wall_seconds": 20.644853324862197,
+  "file_sha256": {
+    "CLASS4-CLAIM.md": "30b97c01027e5b67d64ef71b6050424fe24d9763d20eb364cc9913c65d2ee28d",
+    "CLASS4-PROOF.md": "71565fff1a33319fec656e2ccf1e74ccce5cbd2133da19950c3315e04b2db9b5",
+    "class4_check.py": "4033097846b8de5104864835b9d62ca6814babc0e8352c6983341583e917101e",
+    "finite_check.py": "aded31f1ce4dfbb0b7b780c3e7636e6b1b94c82fced3d8ce4e1a8ab870eafc99",
+    "class4-certificate.json": "7e7a09a2ea6705db243534fd8cfab362f6494e2d8402665c49e4744f8c2e6bbe",
+    "class4-sanity.json": "0e693d6f32ef00467aa16c0a06077a20dfd886efe83223c3ada488cc6581859a",
+    "CLASS4-AUDIT-INITIAL.md": "2b9d3eb081feecb9316755dc09e60ab03afd6b40f3220cdc8d1074bc5cb11ef7",
+    "sources/original-accepted-manuscript.pdf": "249f073d57b4eef348ab6169976a065b71e2787e372c949ec401de391001a52a"
+  }
+}

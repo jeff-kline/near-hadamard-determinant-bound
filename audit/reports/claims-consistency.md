@@ -1,0 +1,50 @@
+# Claims-consistency audit
+
+Verdict: DISCREPANCIES FOUND. No numerical discrepancy; the findings concern wording, stale or missing files, and one overstatement.
+
+## Findings
+
+1. README.md:66 — "With the limit, this answers Problem 7.1 in full." MSX Problem 7.1 (original-accepted-manuscript.txt:1264-1267): "Give sharp lower bounds on the determinants of near-Hadamard matrices in Classes (4), (5) and (6) ... In particular, prove or disprove that for each i = 4, 5, 6, det Mn/Δn >= 0.8 for every n = q+1 >= 30". The "in particular" part is answered exactly. "Sharp lower bounds" is open-ended; the paper (main.tex:95-98) reads it as "the largest constant c_i with |det| >= c_i W_n for all n >= 30" and says only "also answers Problem 7.1". That reading is defensible, but "in full" is the strongest wording on any surface and commits to it. CITATION.cff:17-18 ("answering their Problem 7.1 and Problem 15") and the paper are weaker. Suggest "answers the 0.8 question and gives the best uniform constant in each class" in README and CITATION. Label: sharpening.
+
+2. README.md:9, 146, 140 — links to `ADMISSION.md` and `VERIFICATION.md`, and the command `shasum -a 256 -c MANIFEST.sha256`. None of the three exists in the tree (top level: audit, CITATION.cff, CORRECTIONS.md, evidence, LICENSE, Makefile, paper, README.md, requirements.txt, scripts). README.md:160 also describes `audit/` as "the prior-art record, the review reports and the audit ledger"; `audit/reports/` is empty apart from this report and there is no ledger file. Label: documentation (broken references; may be intentional pre-freeze).
+
+3. Makefile:35-36 vs README.md:145 and main.tex:507-508 — Makefile comment: "Exact infimum certificate: about 660 fields, several CPU hours; use --workers." Target runs `infimum_check.py --workers 8`. README: "`make infimum` takes about a minute on one core." Paper: "about a minute on one processor core; ... exact integers would take several hours." Evidence cpu_seconds = 59.1. scripts/infimum_check.py has no argparse and no `--workers` (grep: no argv/argparse), so the flag is ignored and the comment is stale. Label: documentation.
+
+4. README.md:136-139 vs Makefile — `make infimum` writes evidence/infimum-certificate.json directly (infimum_check.py:33 OUT), overwriting the pinned copy, and nothing compares it. README says `make verify` "compares the results with the pinned copies" and presents infimum as a separate certificate; the asymmetry is not stated. Label: documentation.
+
+5. LMX citation year: README.md:99 "Li, Momihara and Xiang (2026)" and README.md:101 "Linear Algebra Appl. 752"; PRIOR-ART.md:15 "752 (2027) 66-106"; main.tex bibitem LMX "752 (2027) ...; online August 2026"; CORRECTIONS.md:22 "(2026)". Same paper, 2026 vs 2027 by surface. Label: documentation.
+
+6. README.md:123-124 "process-separated AI reviews" and PRIOR-ART.md:39 "by the agent that found the proof". Process-history wording; "process-separated" is undefined for a newcomer (the paper says the same at main.tex:514-519 but explains "not independent expert peer review"). The README gives no definition. Label: documentation.
+
+7. README.md:16-35 (Introduction) — undefined terms for a newcomer: "near-Hadamard" (title only; never defined in README, although the paper defines it at main.tex:58-61), "Classes (4), (5) and (6)" (no pointer to MSX Theorem 1.6 until line 90), "Gauss and Jacobi sums", "primitive element" (line 55), "character orthogonality", "ball arithmetic" (line 118), "FLINT". Line 6-9 "Admission under the project's public research standard" is project jargon. Label: documentation.
+
+8. README.md:67-68 "The Class (4) matrix can take two determinant values at each q" vs main.tex:369-370 "Each q therefore has at most two determinant values". README is stronger than the paper (the two values may coincide for some q). Label: sharpening.
+
+9. README.md:118 "proved on paper above q=5720, 5039 and 10525" vs main.tex:477-483 (R_i(q) > mu_i for every q >= Q_i). "Above" should be "from" (the cutoff itself is covered). Trivial. Label: sharpening.
+
+10. README.md:49 "checked numerically that the ratio ... is at least 0.8 for n<=1000" vs MSX:204-207 (ratios 0.844, 0.846, 0.823 at n=30; ">= 0.8 for any 38 <= n <= 1000") and main.tex:64-65 ("at least 0.8 for 38 <= n <= 1000"). README range omits the 38 start; the n=30 values are covered separately. Label: sharpening.
+
+11. CITATION.cff:4,13-24 — `type: software`, title identical to the paper. The abstract drops "built from any primitive element" and "0.8 part" of Problem 15 (it says "answering ... Problem 15 of a 2026 survey"; the paper and README line 57-58 also say "answers survey Problem 15", and main.tex:68-69 says the survey "repeats the 0.8 question"). Fine as a summary; Problem 15 is the 0.8 question only, whereas CITATION.cff pairs it with Problem 7.1 as if both were answered in full. Label: sharpening.
+
+12. PRIOR-ART.md:13, 15, 27 — page citations "(p. 4)", "(p. 20)", "Theorem 1.7 concerns MSX Classes (7)-(8)", "Prop. 2.1 ... normalized limit is zero". MSX line numbers confirm Problem 7.1, the 0.844/0.846/0.823 values, the sqrt(e)/2 remark (MSX:195, 209) and the 38 <= n <= 1000 checks; the page numbers and LMX theorem number could not be verified (no page markers read; LMX unread). Label: documentation.
+
+## Checked and consistent (no finding)
+
+- Thresholds 676 (Class 4) and 1001 (Classes 5-6): abstract, main.tex:116-117, 399-400, README:39-40, 116, evidence (class4-certificate range "29 <= q < 676", threshold 676; finite-certificate "29 <= q < 1001").
+- 306 = 128 + 89 + 89: main.tex table lines 433-435 (64 fields/128 determinants; 89; 89). Evidence: class4 field_count 64, determinant_count 128; finite-certificate field_count 89, determinant_count 178; infimum exact_consistency_checks 306. Independent count of prime powers q = 1 mod 4 in [29,676) is 64 and in [29,1001) is 89.
+- Minima: exact fractions in main.tex:443-447 equal evidence minima (16067122183125/19668469112621 at q=29, orientation -1; 690199704608000/846441320833557 at q=37, Class 5; 13602934789834170625/16620815899787526144 at q=49, Class 6); decimals 0.81690, 0.81541, 0.81843 match 0.816897, 0.815414, 0.818428. Orders n = 30, 38, 50 correct. Abstract, README (0.8169, 0.8154, 0.8184; 0.81690/0.81541/0.81843), CITATION.cff agree. Class 4 other sign at q=29: 0.84405 in evidence vs "about 0.8440" and "0.844".
+- Cutoffs 5720, 5039, 10525 and counts 392, 352, 666: main.tex:482-484 match infimum-certificate.json (cutoff_Q, orders_checked, rows length 666). Independent count of admissible q in [29, Q) gives 392, 352, 666. Abstract/README "q >= 10525" is the maximum of the three cutoffs, which is correct as stated.
+- Exact arithmetic spot checks: E_4(676) = 47527379/1713660000 equals class4-certificate tail_error_endpoint; the gap to 1/35 equals 10040347/11995620000; E_56 sum = 53309553221/1866085221000 < 1/35 (recomputed with Fractions).
+- sqrt(e)/2 ~ 0.824 on all surfaces. MSX values 0.844, 0.846, 0.823 (main.tex:64; PRIOR-ART:13; MSX:204; evidence rows at q=29: 0.84405, 0.846378, 0.823101). MSX Delta_n = W_n (MSX:181).
+- Paper numbering: main.aux labels give thm:main = 1.1, prop:mom56 = 3.1, prop:mom4 = 4.1, sec:finite = 5, sec:infima = 5.3, sec:remarks = 6. README uses Theorem 1.1 and Propositions 3.1, 4.1 only; all correct. main.pdf numbers agree with main.tex (grep of key numbers is identical; PDF title page reads "Version 0.1.0 -- release candidate, November 15, 2026").
+- Results and novelty qualifiers: the same three results (0.8 bound, limit, exact minima) plus the orientation remark appear on paper, README, CITATION, PRIOR-ART (N1-N9). "Novelty unconfirmed", LMX full text unread, and "not a novelty claim" appear on README (lines 12-14, 83-86), CITATION (23-24), PRIOR-ART (3-7), CORRECTIONS (21-23) and main.tex (136-142). No surface claims priority or a first proof (PRIOR-ART N8 explicitly declines).
+- Credits: constructions, products, ratios 0.844/0.846/0.823, n <= 1000 checks, suggested limit, Class (9) proof, Problem 7.1 to MSX; two-moment bound to MSX (Lemma 2.2, Prop. 2.1 in main.tex:129-130; Prop. 2.1 in PRIOR-ART:13) and trace-log expansion with error bound to Ipsen-Lee Theorem 2.6; Problem 15 (section 5.6) to the survey. README "Not new" matches main.tex:124-134 and PRIOR-ART N2-N4. (README does not mention Lemma 2.2; paper does; not a conflict.)
+- Proved vs certified vs shared library: README table (lines 113-118) matches main.tex:116-122, 399-400, 459-472. FLINT shared-library caveat appears in README:121-122 and main.tex:464-470. README says "Neither checks the proofs" (lines 145-146), consistent with check_paper.py's header.
+- Reproduce commands: Makefile targets paper, check, verify, infimum exist; scripts named in README (finite_check.py, class4_check.py, finite_audit.py, class4_examiner_proof.py, infimum_check.py, compare_certificates.py, check_paper.py) exist; requirements.txt pins python-flint==0.8.0, matching README and evidence flint_version 0.8.0. evidence/ contains the pinned files README says make verify compares against.
+- Banned process words ("lane", "sealed", "pass" as process noun) not found in README, CITATION or main.tex; "pass" in main.tex:480 is mathematical.
+
+## COVERAGE
+
+Read in full: main.tex (all), README.md, CITATION.cff, PRIOR-ART.md, CORRECTIONS.md, Makefile, scripts/check_paper.py header, infimum_check.py header, MSX excerpts around lines 181-209, 1255-1275. jq on all three certificates (status, counts, minima, cutoffs, orders_checked, first row). Fractions and prime-power counts recomputed with ~/.venvs/claude python.
+
+Not checked: individual rows of the certificates and the correctness of any proof or script logic; evidence/finite-audit-results.json, class4-sanity.json, class4-examiner-proof-results.json contents; PRIOR-ART page numbers and LMX details; whether the survey's Problem 15 text matches (survey not opened); the GitHub URLs and DOIs; the SHA hashes in certificates; the Class (9) and Prop. 2.1 statements in MSX beyond the lines listed.

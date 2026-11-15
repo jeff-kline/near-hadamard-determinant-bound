@@ -1,0 +1,457 @@
+{
+  "status": "SOURCE SANITY CHECKS PASSED",
+  "range": "5,9,13,17,25,29",
+  "field_count": 6,
+  "determinant_count": 12,
+  "minima": [
+    {
+      "orientation": 1,
+      "q": 13,
+      "ratio_exact": "841/1053",
+      "ratio_display": 0.798670465337132
+    },
+    {
+      "orientation": -1,
+      "q": 5,
+      "ratio_exact": "4/5",
+      "ratio_display": 0.8
+    }
+  ],
+  "rows": [
+    {
+      "q": 5,
+      "p": 5,
+      "degree": 1,
+      "modulus": [
+        0,
+        1
+      ],
+      "base_primitive": 2,
+      "quadratic_nonsquare": 2,
+      "omega": [
+        2,
+        1
+      ],
+      "order_factors": [
+        2,
+        3
+      ],
+      "D0": [
+        0,
+        1,
+        1
+      ],
+      "L": [
+        0,
+        0,
+        0
+      ],
+      "f": [
+        0,
+        -1,
+        -1
+      ],
+      "W": "160",
+      "values": [
+        {
+          "orientation": 1,
+          "determinant": "160",
+          "margin_5D_minus_4W": "160",
+          "ratio_exact": "1",
+          "ratio_display": 1.0,
+          "dense_checked": true
+        },
+        {
+          "orientation": -1,
+          "determinant": "128",
+          "margin_5D_minus_4W": "0",
+          "ratio_exact": "4/5",
+          "ratio_display": 0.8,
+          "dense_checked": true
+        }
+      ]
+    },
+    {
+      "q": 9,
+      "p": 3,
+      "degree": 2,
+      "modulus": [
+        2,
+        1,
+        1
+      ],
+      "base_primitive": 3,
+      "quadratic_nonsquare": 3,
+      "omega": [
+        3,
+        1
+      ],
+      "order_factors": [
+        2,
+        5
+      ],
+      "D0": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "L": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "f": [
+        0,
+        -1,
+        1,
+        1,
+        -1
+      ],
+      "W": "73728",
+      "values": [
+        {
+          "orientation": 1,
+          "determinant": "64000",
+          "margin_5D_minus_4W": "25088",
+          "ratio_exact": "125/144",
+          "ratio_display": 0.8680555555555556,
+          "dense_checked": true
+        },
+        {
+          "orientation": -1,
+          "determinant": "64000",
+          "margin_5D_minus_4W": "25088",
+          "ratio_exact": "125/144",
+          "ratio_display": 0.8680555555555556,
+          "dense_checked": true
+        }
+      ]
+    },
+    {
+      "q": 13,
+      "p": 13,
+      "degree": 1,
+      "modulus": [
+        0,
+        1
+      ],
+      "base_primitive": 2,
+      "quadratic_nonsquare": 2,
+      "omega": [
+        2,
+        1
+      ],
+      "order_factors": [
+        2,
+        3,
+        7
+      ],
+      "D0": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "L": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "f": [
+        0,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      "W": "77635584",
+      "values": [
+        {
+          "orientation": 1,
+          "determinant": "62005248",
+          "margin_5D_minus_4W": "-516096",
+          "ratio_exact": "841/1053",
+          "ratio_display": 0.798670465337132,
+          "dense_checked": true
+        },
+        {
+          "orientation": -1,
+          "determinant": "68853760",
+          "margin_5D_minus_4W": "33726464",
+          "ratio_exact": "8405/9477",
+          "ratio_display": 0.8868840350321832,
+          "dense_checked": true
+        }
+      ]
+    },
+    {
+      "q": 17,
+      "p": 17,
+      "degree": 1,
+      "modulus": [
+        0,
+        1
+      ],
+      "base_primitive": 3,
+      "quadratic_nonsquare": 3,
+      "omega": [
+        3,
+        1
+      ],
+      "order_factors": [
+        2,
+        3
+      ],
+      "D0": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "L": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "f": [
+        0,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1
+      ],
+      "W": "146028888064",
+      "values": [
+        {
+          "orientation": 1,
+          "determinant": "124581314560",
+          "margin_5D_minus_4W": "38791020544",
+          "ratio_exact": "59405/69632",
+          "ratio_display": 0.8531278722426471,
+          "dense_checked": true
+        },
+        {
+          "orientation": -1,
+          "determinant": "119658905600",
+          "margin_5D_minus_4W": "14178975744",
+          "ratio_exact": "912925/1114112",
+          "ratio_display": 0.8194194120519301,
+          "dense_checked": true
+        }
+      ]
+    },
+    {
+      "q": 25,
+      "p": 5,
+      "degree": 2,
+      "modulus": [
+        2,
+        1,
+        1
+      ],
+      "base_primitive": 5,
+      "quadratic_nonsquare": 5,
+      "omega": [
+        2,
+        1
+      ],
+      "order_factors": [
+        2,
+        3,
+        13
+      ],
+      "D0": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "L": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "f": [
+        0,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "W": "1826017371802828800",
+      "values": [
+        {
+          "orientation": 1,
+          "determinant": "1489278420910080000",
+          "margin_5D_minus_4W": "142322617339084800",
+          "ratio_exact": "197262025/241864704",
+          "ratio_display": 0.8155883092392018,
+          "dense_checked": true
+        },
+        {
+          "orientation": -1,
+          "determinant": "1568703055044542464",
+          "margin_5D_minus_4W": "539445788011397120",
+          "ratio_exact": "46750994177/54419558400",
+          "ratio_display": 0.859084409200204,
+          "dense_checked": true
+        }
+      ]
+    },
+    {
+      "q": 29,
+      "p": 29,
+      "degree": 1,
+      "modulus": [
+        0,
+        1
+      ],
+      "base_primitive": 2,
+      "quadratic_nonsquare": 2,
+      "omega": [
+        4,
+        1
+      ],
+      "order_factors": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "D0": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "L": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "f": [
+        0,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "W": "10559428950136666980352",
+      "values": [
+        {
+          "orientation": 1,
+          "determinant": "8912683710503976960000",
+          "margin_5D_minus_4W": "2325702751973216878592",
+          "ratio_exact": "16601167080000/19668469112621",
+          "ratio_display": 0.8440497826720661,
+          "dense_checked": true
+        },
+        {
+          "orientation": -1,
+          "determinant": "8625970539669749760000",
+          "margin_5D_minus_4W": "892136897802080878592",
+          "ratio_exact": "16067122183125/19668469112621",
+          "ratio_display": 0.816897445913314,
+          "dense_checked": true
+        }
+      ]
+    }
+  ],
+  "threshold": 676,
+  "tail_error_endpoint": "47527379/1713660000",
+  "gap_below_one_over_35": "10040347/11995620000",
+  "cpu_seconds": 0.011427999999999994,
+  "wall_seconds": 0.017955456161871552,
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:22) [Clang 22.1.3 ]",
+  "flint_version": "0.8.0",
+  "source_sha256": "4033097846b8de5104864835b9d62ca6814babc0e8352c6983341583e917101e",
+  "field_dependency_sha256": "aded31f1ce4dfbb0b7b780c3e7636e6b1b94c82fced3d8ce4e1a8ab870eafc99"
+}

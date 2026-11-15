@@ -1,0 +1,547 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[margin=1in]{geometry}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newcommand{\F}{\mathbb F}
+\newcommand{\one}{\mathbf 1}
+\newcommand{\Tr}{\mathrm{Tr}}
+\newcommand{\Res}{\mathrm{Res}}
+\newcommand{\abs}[1]{\lvert#1\rvert}
+\newcommand{\Lstar}{\tfrac{\sqrt e}{2}}
+\title{Sharp determinant bounds for three\\ near-Hadamard families}
+\author{Jeffery Kline}
+\date{Version 0.1.0 --- release candidate, November 15, 2026}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+No $n\times n$ matrix with entries $\pm1$, where $n\equiv2\pmod4$, has
+determinant larger in absolute value than the Ehlich--Wojtas bound
+$W_n=(2n-2)(n-2)^{(n-2)/2}$. For each prime power $q\equiv1\pmod4$,
+Momihara, Suda and Xiang constructed three such matrices of order
+$n=q+1$, their Classes (4), (5) and (6). They wrote the determinants as
+products over Gauss and Jacobi sums without evaluating them, and asked
+whether each family reaches at least $0.8\,W_n$ for every $n\ge30$.
+A 2026 survey lists this as open. We prove that every matrix of order
+$n\ge30$ in the three families exceeds $0.8\,W_n$, and that in each family the ratio to
+$W_n$ tends to $\sqrt e/2\approx0.824$, the limit they suggested. We also
+find the smallest ratio in each family exactly: about $0.8169$, $0.8154$
+and $0.8184$, attained only at $n=30$, $38$ and $50$.
+
+The proof needs only two exact facts about the factors of each product,
+their sum and their sum of squares, both given by character
+orthogonality, together with the size of a Gauss sum. This settles every
+$q\ge676$ for Class (4) and every $q\ge1001$ for Classes (5) and (6).
+Exact integer computations settle the remaining 306 determinants. The same
+estimate exceeds the three smallest ratios for every $q\ge10525$, and a
+rigorous interval computation covers the orders below. We have
+not read the full text of a 2026 follow-up by Li, Momihara and Xiang, so
+we cannot confirm that the result is new.
+\end{abstract}
+
+\section{Introduction}\label{sec:intro}
+
+\subsection{The question}
+A square matrix with entries $\pm1$ has the largest possible determinant
+when its rows are orthogonal; such a matrix is a Hadamard matrix, and it
+can exist only when the order $n$ is $1$, $2$ or a multiple of $4$. For
+$n\equiv2\pmod4$, Ehlich and Wojtas showed that
+\begin{equation}\label{eq:EW}
+ \abs{\det M}\le W_n=(2n-2)(n-2)^{(n-2)/2},
+\end{equation}
+and the bound is rarely attained. The ratio $\abs{\det M}/W_n$ therefore
+measures how good a construction is.
+
+Momihara, Suda and Xiang~\cite{MSX}, abbreviated MSX, built nine
+families of near-Hadamard matrices: matrices of order $n\equiv2\pmod4$
+whose Gram matrix $MM^{\mathsf T}$ is block diagonal, with diagonal
+entries $n$ and off-diagonal entries $\pm2$ in each block. For six of the families they computed the determinant in closed
+form. For Classes (4), (5) and (6), of order $n=q+1$ with $q\equiv1\pmod4$
+a prime power, they could only write it as a product over Gauss and Jacobi
+sums. Their computations gave ratios $0.844$, $0.846$ and $0.823$ at
+$n=30$, and at least $0.8$ for $38\le n\le1000$; they remarked that the
+ratio seems to approach $\sqrt e/2$. Their Problem~7.1 asks for sharp lower
+bounds and, in particular, whether the ratio is at least $0.8$ for every
+$n\ge30$ in each class. The 2026 survey of Egan, Kotsireas, London and
+\'O~Cath\'ain~\cite[\S5.6, Problem 15]{EKLO} repeats the $0.8$ question.
+
+\subsection{The result}
+\begin{theorem}\label{thm:main}
+Let $q\ge29$ be a prime power with $q\equiv1\pmod4$, and let
+$M^{(i)}_{q+1}$ be a matrix of Class $i\in\{4,5,6\}$ of
+\cite[Theorem 1.6]{MSX}, built from any primitive element. Then
+\begin{equation}\label{eq:target}
+ R_i(q):=\frac{\abs{\det M^{(i)}_{q+1}}}{W_{q+1}}
+ =\frac{\abs{\det M^{(i)}_{q+1}}}{2q(q-1)^{(q-1)/2}}>\frac45 .
+\end{equation}
+Moreover $R_i(q)\to\sqrt e/2$ as $q\to\infty$, for each $i$ and
+uniformly in the primitive element. Finally, over all $q\ge29$ and all
+primitive elements, the smallest values are
+\begin{equation}\label{eq:infima}
+ \min R_4=R_4(29)\approx0.81690,\qquad
+ \min R_5=R_5(37)\approx0.81541,\qquad
+ \min R_6=R_6(49)\approx0.81843,
+\end{equation}
+with the exact rational values given in Section~\ref{sec:finite}. Every
+other $q\ge29$ gives a strictly larger ratio in the same class.
+\end{theorem}
+
+In Class (4) at $q=29$ the minimum comes from one of the two possible
+determinants described in Section~\ref{sec:choices}; the other is about
+$0.8440$, the value MSX report. The theorem answers Problem~15 of the
+survey, which is the $0.8$ question of Problem~7.1. It also gives sharp
+constants in the sense of Problem~7.1: \eqref{eq:infima} gives, for each
+class, the largest constant $c_i$ with $\abs{\det M^{(i)}_n}\ge c_iW_n$
+for all $n\ge30$, and the limit $\sqrt e/2$ is the best constant for
+large $n$.
+
+\subsection{How the proof works}
+In each class, $\abs{\det M}$ is a product of numbers $q+1-T$, one for
+each character of a cyclic group, where the $T$ are real character sums.
+Dividing by $q+1$ gives a product of factors $1-t$ with $t=T/(q+1)$.
+Three facts about the $T$ suffice:
+\begin{itemize}
+\item each satisfies $\abs T\le2\sqrt q$, from the size of a Gauss sum;
+\item their sum is a small explicit constant;
+\item their sum of squares is close to $q^2$.
+\end{itemize}
+The second and third facts are exact, and both follow from character
+orthogonality because the underlying $\pm1$ sequence is symmetric under
+inversion and vanishes only at the identity. Expanding
+$\log\prod(1-t)$ to second order then gives $\log R\approx 1-\log2-\tfrac12$,
+so $R\approx\sqrt e/2$, with an error of order $q^{-1/2}$. No information
+about the individual phases of the Gauss or Jacobi sums is needed.
+Explicit constants make the error small enough for $q\ge676$ in Class (4)
+and $q\ge1001$ in Classes (5)--(6). Below these thresholds, exact integer
+resultants evaluate all 306 determinants that remain. For the minima the
+same estimate is used with the target $0.8$ replaced by the smallest
+computed ratio; it then needs $q$ up to about $10^4$, and the orders below
+are checked in interval arithmetic, which bounds the error of every
+operation.
+
+\subsection{Earlier work and status}
+The constructions and the determinant products are those of
+MSX~\cite[Theorem 1.6, Propositions 2.5, 2.6, 2.8, 3.5 and 4.2]{MSX}.
+MSX suggested the limit $\sqrt e/2$ for Classes (4)--(6) and proved the
+same limit for their Class (9). Bounding a determinant through the first
+two moments of its spectrum is standard: MSX use a two-moment bound in
+their Lemma~2.2 and Proposition~2.1, and Ipsen and Lee~\cite[Theorem 2.6]{IL}
+give general trace--log expansions with error bounds. What this paper adds
+is the deduction of the two moment identities for these three families,
+explicit thresholds, the exact computation that closes the finite
+range, and the exact minima.
+
+\textbf{Novelty is unconfirmed.} The survey, revised on 3 November 2026,
+still lists the question as open while citing the 2026 article of Li,
+Momihara and Xiang~\cite{LMX}. We have read only the public preview of that
+article: its abstract, introduction and section openings concern type I
+near-Hadamard matrices, whose ratio tends to $1$, and do not mention
+Classes (4)--(6) or Problem~7.1. We have not read its full text and found
+no earlier proof elsewhere, but neither fact rules out a prior solution.
+
+\section{A logarithmic estimate}\label{sec:lemma}
+
+All logarithms are natural. The following is the scalar form of the
+trace--log argument, with its error made explicit.
+
+\begin{lemma}\label{lem:log}
+Let $t_1,\ldots,t_N$ be real with $\abs{t_j}\le\rho<1$, and put
+$S=\sum_jt_j$ and $V=\sum_jt_j^2$. Then
+\begin{equation}\label{eq:logerror}
+ \Bigl|\sum_{j=1}^N\log(1-t_j)+S+\frac V2\Bigr|
+ \le\frac{\rho V}{3(1-\rho)}.
+\end{equation}
+\end{lemma}
+\begin{proof}
+For $\abs t\le\rho$ the series of $\log(1-t)$ after its quadratic term is
+bounded by $\sum_{k\ge3}\abs t^k/k\le\abs t^3/(3(1-\rho))$. Sum over $j$
+and use $\sum_j\abs{t_j}^3\le\rho V$.
+\end{proof}
+
+In every application below
+\begin{equation}\label{eq:rho}
+ \rho=\frac{2\sqrt q}{q+1}<1,
+ \qquad \frac{\rho}{3(1-\rho)}=\frac{2\sqrt q}{3(\sqrt q-1)^2},
+\end{equation}
+and $V<1$, so the error in~\eqref{eq:logerror} is at most
+$2\sqrt q/(3(\sqrt q-1)^2)$.
+
+\section{Classes (5) and (6)}\label{sec:56}
+
+Fix a primitive element $w$ of $\F_q$, put $m=(q-1)/2$, and let
+$H=\langle w^2\rangle$, the group of nonzero squares. Let $\eta$ be the
+quadratic character of $\F_q$ and let $\chi$ be the multiplicative
+character with $\chi(w)=e^{2\pi i/(q-1)}$. In this section every
+multiplicative character, including the trivial one, is extended by zero
+at $0$. Define the Jacobi sums
+\[
+ J(a,b)=\sum_{x\in\F_q}a(x)\,b(1-x),\qquad
+ U_j=J(\chi^j,\eta),\qquad V_j=J(\eta\chi^j,\eta)\qquad(1\le j<m).
+\]
+By MSX~\cite[Theorems 1.6 and 4.1 and Propositions 2.6, 2.8 and 4.2]{MSX},
+\begin{align}
+ \abs{\det M^{(5)}_{q+1}}&=(q-1)^2\prod_{j=1}^{m-1}(q+1+U_j+V_j),
+   \label{eq:D5}\\
+ \abs{\det M^{(6)}_{q+1}}&=(q^2+2q+5)\prod_{j=1}^{m-1}(q+1-U_j-V_j).
+   \label{eq:D6}
+\end{align}
+MSX extend the trivial character differently at $0$, but every character
+in these products is nontrivial, so the formulas are unaffected. We work
+from the published products and do not need to rebuild the matrices.
+
+\begin{proposition}\label{prop:mom56}
+The numbers $X_j=U_j+V_j$ are real and satisfy
+\begin{equation}\label{eq:mom56}
+ \abs{X_j}\le2\sqrt q,\qquad
+ \sum_{j=1}^{m-1}X_j=2,\qquad
+ \sum_{j=1}^{m-1}X_j^2=q^2-4q-1.
+\end{equation}
+\end{proposition}
+\begin{proof}
+Since $\eta(-1)=1$, substituting $x=y^{-1}$ in $\overline{U_j}$ gives
+\[
+ \overline{U_j}=\sum_{y\ne0}\chi^j(y)\,\eta(1-y^{-1})
+ =\sum_y\chi^j(y)\,\eta(y)\,\eta(1-y)=V_j ,
+\]
+so $X_j=2\,\mathrm{Re}\,U_j$ is real. The characters $\chi^j$, $\eta$ and
+$\chi^j\eta$ are nontrivial for $1\le j<m$, so the Gauss--Jacobi identity
+and the modulus of a nontrivial Gauss sum give $\abs{U_j}=\sqrt q$, and
+hence $\abs{X_j}\le2\sqrt q$.
+
+For the moments, let $g(x)=\eta(x-1)$ for $x\in H$ and
+\[
+ Y_j=\sum_{x\in H}g(x)\,\chi^j(x)\qquad(0\le j<m).
+\]
+The restrictions of $\chi^j$ to $H$, $0\le j<m$, are all the characters of
+$H$. The function $g$ satisfies $g(x^{-1})=g(x)$, $g(1)=0$, and $g(x)^2=1$
+for $x\ne1$. Writing the indicator of the squares as $(1+\eta)/2$ gives
+$2Y_j=U_j+V_j=X_j$ for $1\le j<m$. With our convention at zero,
+$J(1,\eta)=J(\eta,\eta)=-1$, so $Y_0=-1$: the first value is the sum of
+$\eta(1-x)$ over $x\ne0$, and for the second the substitution
+$u=x/(1-x)$ on $\F_q\setminus\{1\}$ gives
+$J(\eta,\eta)=\sum_{u\ne-1}\eta(u)=-\eta(-1)=-1$.
+
+Character orthogonality on $H$ now gives
+\[
+ \sum_{j=0}^{m-1}Y_j=m\,g(1)=0,\qquad
+ \sum_{j=0}^{m-1}Y_j^2=m\sum_{x\in H}g(x)\,g(x^{-1})=m(m-1).
+\]
+Removing $Y_0=-1$ and using $X_j=2Y_j$ gives $\sum X_j=2$ and
+$\sum X_j^2=4m(m-1)-4=q^2-4q-1$.
+\end{proof}
+
+Write $s=-1$ for Class (5) and $s=1$ for Class (6), and put
+$K_{-1}=(q-1)^2$ and $K_{1}=q^2+2q+5$. Every factor
+in~\eqref{eq:D5}--\eqref{eq:D6} is at least $q+1-2\sqrt q=(\sqrt q-1)^2>0$.
+Dividing by $W_{q+1}=2q(q-1)^{(q-1)/2}$ and by $(q+1)^{m-1}$ gives
+\begin{equation}\label{eq:P56}
+ R_{s}(q)=C_s(q)\prod_{j=1}^{m-1}(1-t_j),\qquad
+ C_s(q)=\frac{K_s}{2q(q-1)}\Bigl(\frac{q+1}{q-1}\Bigr)^{(q-3)/2},\qquad
+ t_j=\frac{sX_j}{q+1},
+\end{equation}
+with $R_{-1}=R_5$ and $R_1=R_6$. By Proposition~\ref{prop:mom56},
+\[
+ S=\sum_jt_j=\frac{2s}{q+1},\qquad V=\sum_jt_j^2=\frac{q^2-4q-1}{(q+1)^2}<1.
+\]
+The inequalities $\log(1-x)\ge-x/(1-x)$ for $0<x<1$ and
+$\log\frac{1+x}{1-x}\ge2x$ give
+\[
+ \log\frac{K_s}{2q(q-1)}\ge-\log2-\frac1{q-1},\qquad
+ \frac{q-3}{2}\log\frac{q+1}{q-1}\ge1-\frac3q .
+\]
+Combining these with Lemma~\ref{lem:log}, $-S\ge-2/(q+1)$ and $V<1$ gives,
+for $i=5,6$ and every admissible $q\ge5$,
+\begin{equation}\label{eq:E56}
+ R_i(q)\ge\Lstar\,e^{-E_{56}(q)},\qquad
+ E_{56}(q)=\frac1{q-1}+\frac3q+\frac2{q+1}+\frac{2\sqrt q}{3(\sqrt q-1)^2}.
+\end{equation}
+
+For the limit, $C_s(q)\to e/2$, $S\to0$, $V\to1$, and the error
+in~\eqref{eq:logerror} tends to $0$. Hence $\log R_s(q)\to\frac12-\log2$,
+that is, $R_s(q)\to\sqrt e/2$. The products do not depend on the primitive
+element at all: changing $w$ only relabels the characters of $H$.
+
+\section{Class (4)}\label{sec:4}
+
+Put $v=(q+1)/2$, fix a primitive element $\omega$ of $\F_{q^2}$, and define
+\[
+ G=\langle\omega^{2(q-1)}\rangle,\qquad \alpha=\omega^v,\qquad
+ D_i=\bigl\{x\in G:\Tr_{q^2/q}(\alpha^ix)\text{ is a nonzero square in }\F_q\bigr\}
+ \quad(i=0,1).
+\]
+The group $G$ has odd order $v$. MSX~\cite[Theorem 3.4]{MSX} build Class (4)
+from these sets. Write $L=D_1$ and index matrices by $G$: let
+$A_{x,y}=2\one_{D_0}(yx^{-1})-1$, $B_{x,y}=2\one_L(yx^{-1})-1$ and
+$(N_L)_{x,y}=\one_L(yx^{-1})$. By~\cite[Proposition 2.5]{MSX},
+\begin{equation}\label{eq:gram4}
+ M=\begin{pmatrix}A&B\\B^{\mathsf T}&-A^{\mathsf T}\end{pmatrix},
+ \qquad MM^{\mathsf T}=\mathrm{diag}(C,C),
+ \qquad C=2J+(q-1)I-4N_L,
+\end{equation}
+where $J$ is the all-ones matrix.
+
+For $x\in G$ we have $x^q=x^{-1}$, and $\alpha^{q-1}=-1$, so
+\[
+ \Tr_{q^2/q}(\alpha x)=\alpha(x-x^{-1}).
+\]
+This vanishes only at $x=1$, since $G$ has odd order. Inversion negates
+the trace and $\eta(-1)=1$, so $L=L^{-1}$ and $1\notin L$. Define
+\[
+ f(x)=2\one_L(x)-1+\one_{\{1\}}(x),\qquad
+ T_\psi=2\sum_{x\in G}f(x)\,\psi(x)\qquad(\psi\in\widehat G).
+\]
+Then $f(1)=0$, $f(x)^2=1$ for $x\ne1$, and $f(x^{-1})=f(x)$, so every
+$T_\psi$ is real. Here the trivial character is included.
+
+\begin{proposition}\label{prop:mom4}
+For each $\psi\in\widehat G$, the eigenvalue of $C$ on $\psi$ is
+$q+1-T_\psi$, and
+\begin{equation}\label{eq:mom4}
+ \abs{T_\psi}\le2\sqrt q,\qquad
+ \sum_{\psi\in\widehat G}T_\psi=0,\qquad
+ \sum_{\psi\in\widehat G}T_\psi^2=q^2-1.
+\end{equation}
+Consequently
+\begin{equation}\label{eq:D4}
+ \abs{\det M^{(4)}_{q+1}}=\prod_{\psi\in\widehat G}(q+1-T_\psi).
+\end{equation}
+\end{proposition}
+\begin{proof}
+Write $\psi(L)=\sum_{x\in L}\psi(x)$. For nontrivial $\psi$,
+$T_\psi=4\psi(L)+2$ and the eigenvalue of $C$ is $q-1-4\psi(L)=q+1-T_\psi$.
+For the trivial character, $T_1=4\abs L-(q-1)$ and the eigenvalue is
+$2q-4\abs L=q+1-T_1$.
+
+For the bound, let $\theta$ be a multiplicative character of $\F_{q^2}$ of
+order $v$, and let $\kappa$ have order $4$. Since $\gcd(v,2(q-1))=1$, the
+restrictions of $\theta^h$, $0\le h<v$, are all the characters of $G$.
+Write $\mathcal G_Q(\cdot)$ for a Gauss sum over $\F_Q$ with the canonical
+additive character. MSX~\cite[Proposition 3.5]{MSX} show that
+\[
+ \theta^h(L)=\frac{\mathcal G_q(\eta)}{4q}
+ \sum_{\ell\in\{1,3\}}\mathcal G_{q^2}(\kappa^\ell\theta^h)\,\kappa^{-\ell}(\alpha)
+ +\begin{cases}(q-1)/4,&h=0,\\-1/2,&h\ne0.\end{cases}
+\]
+The constant terms cancel in $T_\psi$. Each $\kappa^\ell\theta^h$ is
+nontrivial, because its order-$4$ part cannot cancel a character of odd
+order. Nontrivial Gauss sums have modulus $\sqrt q$ over $\F_q$ and $q$
+over $\F_{q^2}$, so $\abs{T_\psi}\le(\sqrt q/q)(q+q)=2\sqrt q$.
+
+Character orthogonality gives the moments:
+\[
+ \sum_\psi T_\psi=2v\,f(1)=0,\qquad
+ \sum_\psi T_\psi^2=4v\sum_{x\in G}f(x)\,f(x^{-1})=4v(v-1)=q^2-1.
+\]
+Every eigenvalue of $C$ is at least $(\sqrt q-1)^2>0$, and
+$\abs{\det M}=\det C$ by~\eqref{eq:gram4}, which gives~\eqref{eq:D4}.
+\end{proof}
+
+Dividing~\eqref{eq:D4} by $W_{q+1}$ gives
+\begin{equation}\label{eq:P4}
+ R_4(q)=C_4(q)\prod_{\psi\in\widehat G}(1-t_\psi),\qquad
+ C_4(q)=\frac{q+1}{2q}\Bigl(\frac{q+1}{q-1}\Bigr)^{(q-1)/2},\qquad
+ t_\psi=\frac{T_\psi}{q+1}.
+\end{equation}
+Now $S=0$ and $V=(q-1)/(q+1)<1$. The inequalities
+$\log(1+x)\ge x-x^2/2$ for $x\ge0$ and $\log\frac{1+x}{1-x}\ge2x$ give
+\[
+ \log C_4(q)\ge-\log2+\frac1q-\frac1{2q^2}+\frac{q-1}{q}=1-\log2-\frac1{2q^2},
+\]
+and Lemma~\ref{lem:log} then gives, for every admissible $q\ge5$,
+\begin{equation}\label{eq:E4}
+ R_4(q)\ge\Lstar\,e^{-E_4(q)},\qquad
+ E_4(q)=\frac1{2q^2}+\frac{2\sqrt q}{3(\sqrt q-1)^2}.
+\end{equation}
+As before, $C_4(q)\to e/2$, $V\to1$ and the error tends to $0$, so
+$R_4(q)\to\sqrt e/2$.
+
+\subsection{Choice of primitive element}\label{sec:choices}
+Unlike Classes (5)--(6), Class (4) can depend on the primitive element.
+Any other primitive element is $\omega^r$ with $\gcd(r,q^2-1)=1$, so $r$ is
+odd. The group $G$ is unchanged, and
+\[
+ \alpha'=\alpha^r=\alpha\,(\omega^{q+1})^{(r-1)/2}.
+\]
+The extra factor lies in $\F_q^*$ and has quadratic character
+$(-1)^{(r-1)/2}$, because $\omega^{q+1}$ generates $\F_q^*$. So $L$ is
+replaced either by itself or by $G\setminus(L\cup\{1\})$, that is, $f$ by
+$f$ or $-f$, and replacing $\omega$ by $\omega^{-1}$ realizes the second
+case. Reordering $G$ only permutes the characters. Each $q$ therefore has
+at most two determinant values, one for each sign. The analytic bound
+covers both, since~\eqref{eq:mom4} is unchanged by $f\mapsto-f$; the finite
+computation checks both.
+
+\section{Thresholds, the finite range and the minima}\label{sec:finite}
+
+\subsection{The analytic thresholds}
+Each term of $E_4$ and $E_{56}$ decreases in $q$; for the last term, with
+$u=\sqrt q$,
+\[
+ \frac{d}{du}\,\frac{2u}{3(u-1)^2}=-\frac{2(u+1)}{3(u-1)^3}<0.
+\]
+At $q=676=26^2$,
+\begin{equation}\label{eq:threshold4}
+ E_4(676)=\frac1{2\cdot676^2}+\frac{52}{1875}
+ =\frac{47527379}{1713660000}<\frac1{35}.
+\end{equation}
+For $q\ge1001$ we have $\sqrt q>63/2$, so
+\begin{equation}\label{eq:threshold56}
+ E_{56}(q)\le\frac1{1000}+\frac3{1001}+\frac2{1002}+\frac{84}{3721}
+ =\frac{53309553221}{1866085221000}<\frac1{35}.
+\end{equation}
+Since $e>\sum_{k=0}^5 1/k!=163/60>784/289$, we have $\sqrt e>28/17$, and
+with $e^{-x}\ge1-x$ an error below $1/35$ gives
+\[
+ R_i(q)>\Lstar\cdot\frac{34}{35}=\frac{17\sqrt e}{35}>\frac{17}{35}\cdot\frac{28}{17}=\frac45 .
+\]
+This proves~\eqref{eq:target} for $q\ge676$ in Class (4) and for
+$q\ge1001$ in Classes (5)--(6). The thresholds are not optimized.
+
+\subsection{Exact computation below the thresholds}
+For a monic polynomial $h$ with roots $z_1,\ldots,z_d$, the resultant
+satisfies $\Res(h,F)=\prod_a F(z_a)$. This turns each determinant product
+into an integer resultant.
+
+For Classes (5)--(6), put $g_k=g(w^{2k})=\eta(w^{2k}-1)$ for $0\le k<m$ and
+\[
+ h(X)=1+X+\cdots+X^{m-1},\qquad
+ F_s(X)=q+1-2s\sum_{k=0}^{m-1}g_kX^k .
+\]
+The roots of $h$ are the values of the nontrivial characters of $H$ at
+$w^2$, so $\abs{\det M}=K_s\Res(h,F_s)$ by~\eqref{eq:D5}--\eqref{eq:D6}.
+For Class (4), put $\gamma=\omega^{2(q-1)}$, $f_k=f(\gamma^k)$, and
+\[
+ h_4(X)=X^v-1,\qquad
+ F_{4,\epsilon}(X)=q+1-2\epsilon\sum_{k=0}^{v-1}f_kX^k\qquad(\epsilon=\pm1),
+\]
+so that $\abs{\det M}=\Res(h_4,F_{4,\epsilon})$; here $h_4$ includes the
+trivial character, and the two signs are the two cases of
+Section~\ref{sec:choices}. Each determinant $\Delta$ passes if the integer
+\begin{equation}\label{eq:margin}
+ 5\Delta-4\cdot2q(q-1)^{(q-1)/2}
+\end{equation}
+is positive. No floating-point arithmetic enters any decision.
+
+Every prime power $q\equiv1\pmod4$ in the two ranges was checked:
+\begin{center}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Class & Range & Field orders & Determinants\\
+\midrule
+(4), both signs & $29\le q<676$ & 64 & 128\\
+(5) & $29\le q<1001$ & 89 & 89\\
+(6) & $29\le q<1001$ & 89 & 89\\
+\bottomrule
+\end{tabular}
+\end{center}
+Every margin~\eqref{eq:margin} is positive. The smallest ratios in these
+ranges are
+\begin{align*}
+ \text{Class (4), }q=29:&\quad
+   \tfrac{16067122183125}{19668469112621}\approx0.81690,\\
+ \text{Class (5), }q=37:&\quad
+   \tfrac{690199704608000}{846441320833557}\approx0.81541,\\
+ \text{Class (6), }q=49:&\quad
+   \tfrac{13602934789834170625}{16620815899787526144}\approx0.81843.
+\end{align*}
+Section~\ref{sec:infima} shows that they are the minima over all $q\ge29$.
+The Class (4) value at $q=29$ comes from the sign not reported by MSX; the
+other sign gives about $0.8440$, matching their value.
+
+Each field $\F_q$ is modelled as a quotient of $\F_p[X]$ by a monic
+polynomial. The computation checks that the powers of the chosen element
+run through all $q-1$ nonzero residues before returning to $1$, which
+proves that the quotient is a field and the element is primitive. For
+Class (4), $\F_{q^2}=\F_q[u]/(u^2-d)$ with a certified nonsquare $d$, and
+$\omega$ is certified primitive by exact order tests. Field isomorphisms
+preserve traces and squares, so one model per order suffices.
+
+A second program, written separately, rebuilds the sets and polynomial
+products for all 306 determinants and compares them with full matrix
+determinants at $q=29,49,125,625,673$ in Class (4) (both signs) and at
+$q=29,49,125,625,729,997$ in Classes (5)--(6); the largest matrix has
+order $998$. As a negative control, one sign of Class (4) at $q=13$ gives
+$841/1053<4/5$, outside the theorem's range. Both programs use the FLINT
+library for exact resultants and determinants, so the arithmetic library
+is shared.
+
+Together with~\eqref{eq:threshold4} and~\eqref{eq:threshold56}, this
+proves~\eqref{eq:target} for every $q\ge29$.
+
+\subsection{The minima}\label{sec:infima}
+Let $\mu_i$ be the smallest computed ratio of Class $i$ above. Since $E_4$
+and $E_{56}$ decrease in $q$ and $e^{-x}\ge1-x$, we have $R_i(q)>\mu_i$ for
+every $q\ge Q_i$ as soon as $\Lstar\,(1-E_i(Q_i))>\mu_i$, where
+$E_5=E_6=E_{56}$. We check this in exact rational arithmetic, replacing
+$\sqrt e$ by a rational lower bound derived from $e>\sum_{k\le20}1/k!$ and
+$\sqrt{Q_i}$ in the last term of $E_i$ by a rational lower bound. The
+smallest cutoffs that pass are
+\[
+ Q_4=5720,\qquad Q_5=5039,\qquad Q_6=10525 .
+\]
+Below them lie $392$, $352$ and $666$ admissible orders $q\ge29$. For
+these, the factors of each product are a discrete Fourier transform: in
+Classes (5)--(6), $X_j=2Y_j$, where $Y_j$ is the transform of the
+sequence $g_k$ of Section~\ref{sec:finite}, and in Class (4), $T_\psi$ is
+twice the transform of $f_k$. We compute $\log R_i(q)$ in ball arithmetic
+(Arb, $128$-bit precision), whose discrete Fourier transform returns
+guaranteed enclosures, and check that the whole ball lies above
+$\log\mu_i$. For the 306 determinants computed exactly, the ball
+contains the exact value and the comparison is made exactly. Every order
+other than the minimizer gives a strictly larger ratio, for both signs in
+Class (4). This proves~\eqref{eq:infima} and completes the proof of
+Theorem~\ref{thm:main}. The computation takes about a minute on one
+processor core; computing an exact integer determinant at $q\approx10^4$
+takes about two minutes, measured on the same machine.
+
+\section{Remarks}\label{sec:remarks}
+
+\emph{Scope.} The theorem bounds three families constructed by MSX. It does
+not construct new matrices or improve the largest known determinant at any
+order. The limit $\sqrt e/2$ was suggested by MSX; the contribution is its
+proof, the $0.8$ bound and the exact minima.
+
+\emph{Why the moments suffice.} The ratio depends on the phases of
+$m-1$ or $v$ Gauss and Jacobi sums, which satisfy arithmetic relations that
+are hard to describe completely. The proof avoids them: the bound in
+Lemma~\ref{lem:log} depends on the $t$ only through $\max\abs t$, $\sum t$
+and $\sum t^2$, and orthogonality fixes the last two exactly, because the
+underlying sequence is symmetric under inversion, equals $\pm1$ away from
+the identity and vanishes there.
+
+\subsection*{Role of AI}
+AI assisted the derivations, the computer verification, the literature
+search and the exposition under the author's direction. Process-separated
+AI reviews checked the proofs and certificates; they are not independent
+expert peer review, and no independent human expert has examined the
+proofs. The release repository records the sources, the reviews and their
+dispositions.
+
+\begin{thebibliography}{9}
+\bibitem{EKLO}
+R. Egan, I. S. Kotsireas, S. London, and P. \'O Cath\'ain,
+\emph{Recent progress in the construction of Hadamard matrices},
+arXiv:2610.27175v2, revised 3 November 2026, Section 5.6, Problem 15.
+\url{https://arxiv.org/abs/2610.27175v2}.
+
+\bibitem{IL}
+I. C. F. Ipsen and D. J. Lee,
+\emph{Determinant approximations}, arXiv:1105.0437, 2011.
+\url{https://arxiv.org/abs/1105.0437}.
+
+\bibitem{LMX}
+S. Li, K. Momihara, and Q. Xiang,
+\emph{New constructions of square $(\pm1)$-matrices with large determinants},
+Linear Algebra Appl. \textbf{752} (2027), 66--106; online August 2026.
+\url{https://doi.org/10.1016/j.laa.2026.08.013}.
+
+\bibitem{MSX}
+K. Momihara, S. Suda, and Q. Xiang,
+\emph{Square $(1,-1)$-matrices with large determinants and near-Hadamard matrices},
+Linear Algebra Appl. \textbf{654} (2022), 28--55.
+\url{https://doi.org/10.1016/j.laa.2022.08.028}.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,136 @@
+Class4 q=29 order n=30 v=15: 192 primitive omega=w0^j; 2 distinct (D0,D1)
+  j in [1, 13, 17]..(count 96, j=1:True, j=-1:False) |D0|=10 |D1|=6 coef(L)=[8] coef(nonL)=[9] c0=16 gram_ok=True zero_offdiag=450 |det|=8912683710503976960000 R=16601167080000/19668469112621 = 0.844050
+  j in [11, 19, 23]..(count 96, j=1:False, j=-1:True) |D0|=10 |D1|=8 coef(L)=[10] coef(nonL)=[11] c0=18 gram_ok=True zero_offdiag=450 |det|=8625970539669749760000 R=16067122183125/19668469112621 = 0.816897
+  cpu 0.2s
+Classes5/6 q=29 order n=30 v=14: 12 primitive omega; 12 distinct set-quadruples
+  Class 5: j-count 1 (j=1:True, j=-1:False, first [1]) |A|=7 |B|=7 coef(L)=[6] coef(nonL)=[7] c0=14 gram_ok=True zero_offdiag=450 |det|=8937267024850730352640 R=6933343220/8191782221 = 0.846378
+  Class 6: j-count 1 (j=1:True, j=-1:False, first [1]) |A|=6 |B|=7 coef(L)=[5] coef(nonL)=[6] c0=13 gram_ok=True zero_offdiag=450 |det|=8691479386489219973120 R=558246273065/678223072849 = 0.823101
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [3]) |A|=7 |B|=7 coef(L)=[6] coef(nonL)=[7] c0=14 gram_ok=True zero_offdiag=450 |det|=8937267024850730352640 R=6933343220/8191782221 = 0.846378
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [3]) |A|=6 |B|=7 coef(L)=[5] coef(nonL)=[6] c0=13 gram_ok=True zero_offdiag=450 |det|=8691479386489219973120 R=558246273065/678223072849 = 0.823101
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [5]) |A|=7 |B|=7 coef(L)=[6] coef(nonL)=[7] c0=14 gram_ok=True zero_offdiag=450 |det|=8937267024850730352640 R=6933343220/8191782221 = 0.846378
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [5]) |A|=6 |B|=7 coef(L)=[5] coef(nonL)=[6] c0=13 gram_ok=True zero_offdiag=450 |det|=8691479386489219973120 R=558246273065/678223072849 = 0.823101
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [9]) |A|=7 |B|=7 coef(L)=[6] coef(nonL)=[7] c0=14 gram_ok=True zero_offdiag=450 |det|=8937267024850730352640 R=6933343220/8191782221 = 0.846378
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [9]) |A|=6 |B|=7 coef(L)=[5] coef(nonL)=[6] c0=13 gram_ok=True zero_offdiag=450 |det|=8691479386489219973120 R=558246273065/678223072849 = 0.823101
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [11]) |A|=7 |B|=7 coef(L)=[6] coef(nonL)=[7] c0=14 gram_ok=True zero_offdiag=450 |det|=8937267024850730352640 R=6933343220/8191782221 = 0.846378
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [11]) |A|=6 |B|=7 coef(L)=[5] coef(nonL)=[6] c0=13 gram_ok=True zero_offdiag=450 |det|=8691479386489219973120 R=558246273065/678223072849 = 0.823101
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [13]) |A|=7 |B|=7 coef(L)=[6] coef(nonL)=[7] c0=14 gram_ok=True zero_offdiag=450 |det|=8937267024850730352640 R=6933343220/8191782221 = 0.846378
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [13]) |A|=6 |B|=7 coef(L)=[5] coef(nonL)=[6] c0=13 gram_ok=True zero_offdiag=450 |det|=8691479386489219973120 R=558246273065/678223072849 = 0.823101
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [15]) |A|=7 |B|=7 coef(L)=[6] coef(nonL)=[7] c0=14 gram_ok=True zero_offdiag=450 |det|=8937267024850730352640 R=6933343220/8191782221 = 0.846378
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [15]) |A|=6 |B|=7 coef(L)=[5] coef(nonL)=[6] c0=13 gram_ok=True zero_offdiag=450 |det|=8691479386489219973120 R=558246273065/678223072849 = 0.823101
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [17]) |A|=7 |B|=7 coef(L)=[6] coef(nonL)=[7] c0=14 gram_ok=True zero_offdiag=450 |det|=8937267024850730352640 R=6933343220/8191782221 = 0.846378
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [17]) |A|=6 |B|=7 coef(L)=[5] coef(nonL)=[6] c0=13 gram_ok=True zero_offdiag=450 |det|=8691479386489219973120 R=558246273065/678223072849 = 0.823101
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [19]) |A|=7 |B|=7 coef(L)=[6] coef(nonL)=[7] c0=14 gram_ok=True zero_offdiag=450 |det|=8937267024850730352640 R=6933343220/8191782221 = 0.846378
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [19]) |A|=6 |B|=7 coef(L)=[5] coef(nonL)=[6] c0=13 gram_ok=True zero_offdiag=450 |det|=8691479386489219973120 R=558246273065/678223072849 = 0.823101
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [23]) |A|=7 |B|=7 coef(L)=[6] coef(nonL)=[7] c0=14 gram_ok=True zero_offdiag=450 |det|=8937267024850730352640 R=6933343220/8191782221 = 0.846378
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [23]) |A|=6 |B|=7 coef(L)=[5] coef(nonL)=[6] c0=13 gram_ok=True zero_offdiag=450 |det|=8691479386489219973120 R=558246273065/678223072849 = 0.823101
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [25]) |A|=7 |B|=7 coef(L)=[6] coef(nonL)=[7] c0=14 gram_ok=True zero_offdiag=450 |det|=8937267024850730352640 R=6933343220/8191782221 = 0.846378
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [25]) |A|=6 |B|=7 coef(L)=[5] coef(nonL)=[6] c0=13 gram_ok=True zero_offdiag=450 |det|=8691479386489219973120 R=558246273065/678223072849 = 0.823101
+  Class 5: j-count 1 (j=1:False, j=-1:True, first [27]) |A|=7 |B|=7 coef(L)=[6] coef(nonL)=[7] c0=14 gram_ok=True zero_offdiag=450 |det|=8937267024850730352640 R=6933343220/8191782221 = 0.846378
+  Class 6: j-count 1 (j=1:False, j=-1:True, first [27]) |A|=6 |B|=7 coef(L)=[5] coef(nonL)=[6] c0=13 gram_ok=True zero_offdiag=450 |det|=8691479386489219973120 R=558246273065/678223072849 = 0.823101
+  cpu 0.1s
+Class4 q=37 order n=38 v=19: 432 primitive omega=w0^j; 2 distinct (D0,D1)
+  j in [1, 5, 13]..(count 216, j=1:True, j=-1:False) |D0|=10 |D1|=12 coef(L)=[12] coef(nonL)=[13] c0=22 gram_ok=True zero_offdiag=722 |det|=630285054136152141635577184256 R=4585927338747948973/5553501505988967477 = 0.825772
+  j in [7, 11, 23]..(count 216, j=1:False, j=-1:True) |D0|=10 |D1|=6 coef(L)=[6] coef(nonL)=[7] c0=16 gram_ok=True zero_offdiag=722 |det|=638407220185140100508470476800 R=4645023874655745025/5553501505988967477 = 0.836414
+  cpu 0.5s
+Classes5/6 q=37 order n=38 v=18: 12 primitive omega; 12 distinct set-quadruples
+  Class 5: j-count 1 (j=1:True, j=-1:False, first [1]) |A|=9 |B|=9 coef(L)=[8] coef(nonL)=[9] c0=18 gram_ok=True zero_offdiag=722 |det|=622378592902414294409281536000 R=690199704608000/846441320833557 = 0.815414
+  Class 6: j-count 1 (j=1:True, j=-1:False, first [1]) |A|=8 |B|=9 coef(L)=[7] coef(nonL)=[8] c0=17 gram_ok=True zero_offdiag=722 |det|=645242126879968932844957335552 R=79506077428309/94049035648173 = 0.845368
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [5]) |A|=9 |B|=9 coef(L)=[8] coef(nonL)=[9] c0=18 gram_ok=True zero_offdiag=722 |det|=622378592902414294409281536000 R=690199704608000/846441320833557 = 0.815414
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [5]) |A|=8 |B|=9 coef(L)=[7] coef(nonL)=[8] c0=17 gram_ok=True zero_offdiag=722 |det|=645242126879968932844957335552 R=79506077428309/94049035648173 = 0.845368
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [7]) |A|=9 |B|=9 coef(L)=[8] coef(nonL)=[9] c0=18 gram_ok=True zero_offdiag=722 |det|=622378592902414294409281536000 R=690199704608000/846441320833557 = 0.815414
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [7]) |A|=8 |B|=9 coef(L)=[7] coef(nonL)=[8] c0=17 gram_ok=True zero_offdiag=722 |det|=645242126879968932844957335552 R=79506077428309/94049035648173 = 0.845368
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [11]) |A|=9 |B|=9 coef(L)=[8] coef(nonL)=[9] c0=18 gram_ok=True zero_offdiag=722 |det|=622378592902414294409281536000 R=690199704608000/846441320833557 = 0.815414
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [11]) |A|=8 |B|=9 coef(L)=[7] coef(nonL)=[8] c0=17 gram_ok=True zero_offdiag=722 |det|=645242126879968932844957335552 R=79506077428309/94049035648173 = 0.845368
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [13]) |A|=9 |B|=9 coef(L)=[8] coef(nonL)=[9] c0=18 gram_ok=True zero_offdiag=722 |det|=622378592902414294409281536000 R=690199704608000/846441320833557 = 0.815414
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [13]) |A|=8 |B|=9 coef(L)=[7] coef(nonL)=[8] c0=17 gram_ok=True zero_offdiag=722 |det|=645242126879968932844957335552 R=79506077428309/94049035648173 = 0.845368
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [17]) |A|=9 |B|=9 coef(L)=[8] coef(nonL)=[9] c0=18 gram_ok=True zero_offdiag=722 |det|=622378592902414294409281536000 R=690199704608000/846441320833557 = 0.815414
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [17]) |A|=8 |B|=9 coef(L)=[7] coef(nonL)=[8] c0=17 gram_ok=True zero_offdiag=722 |det|=645242126879968932844957335552 R=79506077428309/94049035648173 = 0.845368
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [19]) |A|=9 |B|=9 coef(L)=[8] coef(nonL)=[9] c0=18 gram_ok=True zero_offdiag=722 |det|=622378592902414294409281536000 R=690199704608000/846441320833557 = 0.815414
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [19]) |A|=8 |B|=9 coef(L)=[7] coef(nonL)=[8] c0=17 gram_ok=True zero_offdiag=722 |det|=645242126879968932844957335552 R=79506077428309/94049035648173 = 0.845368
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [23]) |A|=9 |B|=9 coef(L)=[8] coef(nonL)=[9] c0=18 gram_ok=True zero_offdiag=722 |det|=622378592902414294409281536000 R=690199704608000/846441320833557 = 0.815414
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [23]) |A|=8 |B|=9 coef(L)=[7] coef(nonL)=[8] c0=17 gram_ok=True zero_offdiag=722 |det|=645242126879968932844957335552 R=79506077428309/94049035648173 = 0.845368
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [25]) |A|=9 |B|=9 coef(L)=[8] coef(nonL)=[9] c0=18 gram_ok=True zero_offdiag=722 |det|=622378592902414294409281536000 R=690199704608000/846441320833557 = 0.815414
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [25]) |A|=8 |B|=9 coef(L)=[7] coef(nonL)=[8] c0=17 gram_ok=True zero_offdiag=722 |det|=645242126879968932844957335552 R=79506077428309/94049035648173 = 0.845368
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [29]) |A|=9 |B|=9 coef(L)=[8] coef(nonL)=[9] c0=18 gram_ok=True zero_offdiag=722 |det|=622378592902414294409281536000 R=690199704608000/846441320833557 = 0.815414
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [29]) |A|=8 |B|=9 coef(L)=[7] coef(nonL)=[8] c0=17 gram_ok=True zero_offdiag=722 |det|=645242126879968932844957335552 R=79506077428309/94049035648173 = 0.845368
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [31]) |A|=9 |B|=9 coef(L)=[8] coef(nonL)=[9] c0=18 gram_ok=True zero_offdiag=722 |det|=622378592902414294409281536000 R=690199704608000/846441320833557 = 0.815414
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [31]) |A|=8 |B|=9 coef(L)=[7] coef(nonL)=[8] c0=17 gram_ok=True zero_offdiag=722 |det|=645242126879968932844957335552 R=79506077428309/94049035648173 = 0.845368
+  Class 5: j-count 1 (j=1:False, j=-1:True, first [35]) |A|=9 |B|=9 coef(L)=[8] coef(nonL)=[9] c0=18 gram_ok=True zero_offdiag=722 |det|=622378592902414294409281536000 R=690199704608000/846441320833557 = 0.815414
+  Class 6: j-count 1 (j=1:False, j=-1:True, first [35]) |A|=8 |B|=9 coef(L)=[7] coef(nonL)=[8] c0=17 gram_ok=True zero_offdiag=722 |det|=645242126879968932844957335552 R=79506077428309/94049035648173 = 0.845368
+  cpu 0.2s
+Class4 q=41 order n=42 v=21: 384 primitive omega=w0^j; 2 distinct (D0,D1)
+  j in [1, 13, 17]..(count 192, j=1:True, j=-1:False) |D0|=13 |D1|=12 coef(L)=[14] coef(nonL)=[15] c0=25 gram_ok=True zero_offdiag=882 |det|=7607263466026908820310288691625984 R=3459382908671117920817/4100000000000000000000 = 0.843752
+  j in [11, 19, 23]..(count 192, j=1:False, j=-1:True) |D0|=13 |D1|=8 coef(L)=[10] coef(nonL)=[11] c0=21 gram_ok=True zero_offdiag=882 |det|=7367447441165440461613346639052800 R=2093954504165776729/2562500000000000000 = 0.817153
+  cpu 0.5s
+Classes5/6 q=41 order n=42 v=20: 16 primitive omega; 16 distinct set-quadruples
+  Class 5: j-count 1 (j=1:True, j=-1:False, first [1]) |A|=10 |B|=10 coef(L)=[9] coef(nonL)=[10] c0=20 gram_ok=True zero_offdiag=882 |det|=7499189205406813273641524920320000 R=5328494413992369/6406250000000000 = 0.831765
+  Class 6: j-count 1 (j=1:True, j=-1:False, first [1]) |A|=9 |B|=10 coef(L)=[8] coef(nonL)=[9] c0=19 gram_ok=True zero_offdiag=882 |det|=7459763071370407003314680701648896 R=3392307494946365751873/4100000000000000000000 = 0.827392
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [3]) |A|=10 |B|=10 coef(L)=[9] coef(nonL)=[10] c0=20 gram_ok=True zero_offdiag=882 |det|=7499189205406813273641524920320000 R=5328494413992369/6406250000000000 = 0.831765
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [3]) |A|=9 |B|=10 coef(L)=[8] coef(nonL)=[9] c0=19 gram_ok=True zero_offdiag=882 |det|=7459763071370407003314680701648896 R=3392307494946365751873/4100000000000000000000 = 0.827392
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [7]) |A|=10 |B|=10 coef(L)=[9] coef(nonL)=[10] c0=20 gram_ok=True zero_offdiag=882 |det|=7499189205406813273641524920320000 R=5328494413992369/6406250000000000 = 0.831765
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [7]) |A|=9 |B|=10 coef(L)=[8] coef(nonL)=[9] c0=19 gram_ok=True zero_offdiag=882 |det|=7459763071370407003314680701648896 R=3392307494946365751873/4100000000000000000000 = 0.827392
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [9]) |A|=10 |B|=10 coef(L)=[9] coef(nonL)=[10] c0=20 gram_ok=True zero_offdiag=882 |det|=7499189205406813273641524920320000 R=5328494413992369/6406250000000000 = 0.831765
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [9]) |A|=9 |B|=10 coef(L)=[8] coef(nonL)=[9] c0=19 gram_ok=True zero_offdiag=882 |det|=7459763071370407003314680701648896 R=3392307494946365751873/4100000000000000000000 = 0.827392
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [11]) |A|=10 |B|=10 coef(L)=[9] coef(nonL)=[10] c0=20 gram_ok=True zero_offdiag=882 |det|=7499189205406813273641524920320000 R=5328494413992369/6406250000000000 = 0.831765
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [11]) |A|=9 |B|=10 coef(L)=[8] coef(nonL)=[9] c0=19 gram_ok=True zero_offdiag=882 |det|=7459763071370407003314680701648896 R=3392307494946365751873/4100000000000000000000 = 0.827392
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [13]) |A|=10 |B|=10 coef(L)=[9] coef(nonL)=[10] c0=20 gram_ok=True zero_offdiag=882 |det|=7499189205406813273641524920320000 R=5328494413992369/6406250000000000 = 0.831765
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [13]) |A|=9 |B|=10 coef(L)=[8] coef(nonL)=[9] c0=19 gram_ok=True zero_offdiag=882 |det|=7459763071370407003314680701648896 R=3392307494946365751873/4100000000000000000000 = 0.827392
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [17]) |A|=10 |B|=10 coef(L)=[9] coef(nonL)=[10] c0=20 gram_ok=True zero_offdiag=882 |det|=7499189205406813273641524920320000 R=5328494413992369/6406250000000000 = 0.831765
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [17]) |A|=9 |B|=10 coef(L)=[8] coef(nonL)=[9] c0=19 gram_ok=True zero_offdiag=882 |det|=7459763071370407003314680701648896 R=3392307494946365751873/4100000000000000000000 = 0.827392
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [19]) |A|=10 |B|=10 coef(L)=[9] coef(nonL)=[10] c0=20 gram_ok=True zero_offdiag=882 |det|=7499189205406813273641524920320000 R=5328494413992369/6406250000000000 = 0.831765
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [19]) |A|=9 |B|=10 coef(L)=[8] coef(nonL)=[9] c0=19 gram_ok=True zero_offdiag=882 |det|=7459763071370407003314680701648896 R=3392307494946365751873/4100000000000000000000 = 0.827392
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [21]) |A|=10 |B|=10 coef(L)=[9] coef(nonL)=[10] c0=20 gram_ok=True zero_offdiag=882 |det|=7499189205406813273641524920320000 R=5328494413992369/6406250000000000 = 0.831765
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [21]) |A|=9 |B|=10 coef(L)=[8] coef(nonL)=[9] c0=19 gram_ok=True zero_offdiag=882 |det|=7459763071370407003314680701648896 R=3392307494946365751873/4100000000000000000000 = 0.827392
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [23]) |A|=10 |B|=10 coef(L)=[9] coef(nonL)=[10] c0=20 gram_ok=True zero_offdiag=882 |det|=7499189205406813273641524920320000 R=5328494413992369/6406250000000000 = 0.831765
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [23]) |A|=9 |B|=10 coef(L)=[8] coef(nonL)=[9] c0=19 gram_ok=True zero_offdiag=882 |det|=7459763071370407003314680701648896 R=3392307494946365751873/4100000000000000000000 = 0.827392
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [27]) |A|=10 |B|=10 coef(L)=[9] coef(nonL)=[10] c0=20 gram_ok=True zero_offdiag=882 |det|=7499189205406813273641524920320000 R=5328494413992369/6406250000000000 = 0.831765
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [27]) |A|=9 |B|=10 coef(L)=[8] coef(nonL)=[9] c0=19 gram_ok=True zero_offdiag=882 |det|=7459763071370407003314680701648896 R=3392307494946365751873/4100000000000000000000 = 0.827392
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [29]) |A|=10 |B|=10 coef(L)=[9] coef(nonL)=[10] c0=20 gram_ok=True zero_offdiag=882 |det|=7499189205406813273641524920320000 R=5328494413992369/6406250000000000 = 0.831765
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [29]) |A|=9 |B|=10 coef(L)=[8] coef(nonL)=[9] c0=19 gram_ok=True zero_offdiag=882 |det|=7459763071370407003314680701648896 R=3392307494946365751873/4100000000000000000000 = 0.827392
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [31]) |A|=10 |B|=10 coef(L)=[9] coef(nonL)=[10] c0=20 gram_ok=True zero_offdiag=882 |det|=7499189205406813273641524920320000 R=5328494413992369/6406250000000000 = 0.831765
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [31]) |A|=9 |B|=10 coef(L)=[8] coef(nonL)=[9] c0=19 gram_ok=True zero_offdiag=882 |det|=7459763071370407003314680701648896 R=3392307494946365751873/4100000000000000000000 = 0.827392
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [33]) |A|=10 |B|=10 coef(L)=[9] coef(nonL)=[10] c0=20 gram_ok=True zero_offdiag=882 |det|=7499189205406813273641524920320000 R=5328494413992369/6406250000000000 = 0.831765
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [33]) |A|=9 |B|=10 coef(L)=[8] coef(nonL)=[9] c0=19 gram_ok=True zero_offdiag=882 |det|=7459763071370407003314680701648896 R=3392307494946365751873/4100000000000000000000 = 0.827392
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [37]) |A|=10 |B|=10 coef(L)=[9] coef(nonL)=[10] c0=20 gram_ok=True zero_offdiag=882 |det|=7499189205406813273641524920320000 R=5328494413992369/6406250000000000 = 0.831765
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [37]) |A|=9 |B|=10 coef(L)=[8] coef(nonL)=[9] c0=19 gram_ok=True zero_offdiag=882 |det|=7459763071370407003314680701648896 R=3392307494946365751873/4100000000000000000000 = 0.827392
+  Class 5: j-count 1 (j=1:False, j=-1:True, first [39]) |A|=10 |B|=10 coef(L)=[9] coef(nonL)=[10] c0=20 gram_ok=True zero_offdiag=882 |det|=7499189205406813273641524920320000 R=5328494413992369/6406250000000000 = 0.831765
+  Class 6: j-count 1 (j=1:False, j=-1:True, first [39]) |A|=9 |B|=10 coef(L)=[8] coef(nonL)=[9] c0=19 gram_ok=True zero_offdiag=882 |det|=7459763071370407003314680701648896 R=3392307494946365751873/4100000000000000000000 = 0.827392
+  cpu 0.3s
+Class4 q=49 order n=50 v=25: 640 primitive omega=w0^j; 2 distinct (D0,D1)
+  j in [1, 13, 17]..(count 320, j=1:True, j=-1:False) |D0|=9 |D1|=12 coef(L)=[8] coef(nonL)=[9] c0=21 gram_ok=True zero_offdiag=1250 |det|=1817887945015082432990699651940220928000000 R=3229217684390808132716265625/3895345512966151362538635264 = 0.828994
+  j in [7, 11, 19]..(count 320, j=1:False, j=-1:True) |D0|=9 |D1|=12 coef(L)=[8] coef(nonL)=[9] c0=21 gram_ok=True zero_offdiag=1250 |det|=1817887945015082432990699651940220928000000 R=3229217684390808132716265625/3895345512966151362538635264 = 0.828994
+  cpu 1.6s
+Classes5/6 q=49 order n=50 v=24: 16 primitive omega; 16 distinct set-quadruples
+  Class 5: j-count 1 (j=1:True, j=-1:False, first [1]) |A|=12 |B|=12 coef(L)=[11] coef(nonL)=[12] c0=24 gram_ok=True zero_offdiag=1250 |det|=1841008844554629333210549988809234186240000 R=4589984880625/5467277940768 = 0.839538
+  Class 6: j-count 1 (j=1:True, j=-1:False, first [1]) |A|=11 |B|=12 coef(L)=[10] coef(nonL)=[11] c0=23 gram_ok=True zero_offdiag=1250 |det|=1794717302469193170081067353390616412160000 R=13602934789834170625/16620815899787526144 = 0.818428
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [5]) |A|=12 |B|=12 coef(L)=[11] coef(nonL)=[12] c0=24 gram_ok=True zero_offdiag=1250 |det|=1841008844554629333210549988809234186240000 R=4589984880625/5467277940768 = 0.839538
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [5]) |A|=11 |B|=12 coef(L)=[10] coef(nonL)=[11] c0=23 gram_ok=True zero_offdiag=1250 |det|=1794717302469193170081067353390616412160000 R=13602934789834170625/16620815899787526144 = 0.818428
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [7]) |A|=12 |B|=12 coef(L)=[11] coef(nonL)=[12] c0=24 gram_ok=True zero_offdiag=1250 |det|=1841008844554629333210549988809234186240000 R=4589984880625/5467277940768 = 0.839538
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [7]) |A|=11 |B|=12 coef(L)=[10] coef(nonL)=[11] c0=23 gram_ok=True zero_offdiag=1250 |det|=1794717302469193170081067353390616412160000 R=13602934789834170625/16620815899787526144 = 0.818428
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [11]) |A|=12 |B|=12 coef(L)=[11] coef(nonL)=[12] c0=24 gram_ok=True zero_offdiag=1250 |det|=1841008844554629333210549988809234186240000 R=4589984880625/5467277940768 = 0.839538
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [11]) |A|=11 |B|=12 coef(L)=[10] coef(nonL)=[11] c0=23 gram_ok=True zero_offdiag=1250 |det|=1794717302469193170081067353390616412160000 R=13602934789834170625/16620815899787526144 = 0.818428
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [13]) |A|=12 |B|=12 coef(L)=[11] coef(nonL)=[12] c0=24 gram_ok=True zero_offdiag=1250 |det|=1841008844554629333210549988809234186240000 R=4589984880625/5467277940768 = 0.839538
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [13]) |A|=11 |B|=12 coef(L)=[10] coef(nonL)=[11] c0=23 gram_ok=True zero_offdiag=1250 |det|=1794717302469193170081067353390616412160000 R=13602934789834170625/16620815899787526144 = 0.818428
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [17]) |A|=12 |B|=12 coef(L)=[11] coef(nonL)=[12] c0=24 gram_ok=True zero_offdiag=1250 |det|=1841008844554629333210549988809234186240000 R=4589984880625/5467277940768 = 0.839538
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [17]) |A|=11 |B|=12 coef(L)=[10] coef(nonL)=[11] c0=23 gram_ok=True zero_offdiag=1250 |det|=1794717302469193170081067353390616412160000 R=13602934789834170625/16620815899787526144 = 0.818428
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [19]) |A|=12 |B|=12 coef(L)=[11] coef(nonL)=[12] c0=24 gram_ok=True zero_offdiag=1250 |det|=1841008844554629333210549988809234186240000 R=4589984880625/5467277940768 = 0.839538
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [19]) |A|=11 |B|=12 coef(L)=[10] coef(nonL)=[11] c0=23 gram_ok=True zero_offdiag=1250 |det|=1794717302469193170081067353390616412160000 R=13602934789834170625/16620815899787526144 = 0.818428
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [23]) |A|=12 |B|=12 coef(L)=[11] coef(nonL)=[12] c0=24 gram_ok=True zero_offdiag=1250 |det|=1841008844554629333210549988809234186240000 R=4589984880625/5467277940768 = 0.839538
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [23]) |A|=11 |B|=12 coef(L)=[10] coef(nonL)=[11] c0=23 gram_ok=True zero_offdiag=1250 |det|=1794717302469193170081067353390616412160000 R=13602934789834170625/16620815899787526144 = 0.818428
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [25]) |A|=12 |B|=12 coef(L)=[11] coef(nonL)=[12] c0=24 gram_ok=True zero_offdiag=1250 |det|=1841008844554629333210549988809234186240000 R=4589984880625/5467277940768 = 0.839538
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [25]) |A|=11 |B|=12 coef(L)=[10] coef(nonL)=[11] c0=23 gram_ok=True zero_offdiag=1250 |det|=1794717302469193170081067353390616412160000 R=13602934789834170625/16620815899787526144 = 0.818428
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [29]) |A|=12 |B|=12 coef(L)=[11] coef(nonL)=[12] c0=24 gram_ok=True zero_offdiag=1250 |det|=1841008844554629333210549988809234186240000 R=4589984880625/5467277940768 = 0.839538
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [29]) |A|=11 |B|=12 coef(L)=[10] coef(nonL)=[11] c0=23 gram_ok=True zero_offdiag=1250 |det|=1794717302469193170081067353390616412160000 R=13602934789834170625/16620815899787526144 = 0.818428
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [31]) |A|=12 |B|=12 coef(L)=[11] coef(nonL)=[12] c0=24 gram_ok=True zero_offdiag=1250 |det|=1841008844554629333210549988809234186240000 R=4589984880625/5467277940768 = 0.839538
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [31]) |A|=11 |B|=12 coef(L)=[10] coef(nonL)=[11] c0=23 gram_ok=True zero_offdiag=1250 |det|=1794717302469193170081067353390616412160000 R=13602934789834170625/16620815899787526144 = 0.818428
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [35]) |A|=12 |B|=12 coef(L)=[11] coef(nonL)=[12] c0=24 gram_ok=True zero_offdiag=1250 |det|=1841008844554629333210549988809234186240000 R=4589984880625/5467277940768 = 0.839538
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [35]) |A|=11 |B|=12 coef(L)=[10] coef(nonL)=[11] c0=23 gram_ok=True zero_offdiag=1250 |det|=1794717302469193170081067353390616412160000 R=13602934789834170625/16620815899787526144 = 0.818428
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [37]) |A|=12 |B|=12 coef(L)=[11] coef(nonL)=[12] c0=24 gram_ok=True zero_offdiag=1250 |det|=1841008844554629333210549988809234186240000 R=4589984880625/5467277940768 = 0.839538
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [37]) |A|=11 |B|=12 coef(L)=[10] coef(nonL)=[11] c0=23 gram_ok=True zero_offdiag=1250 |det|=1794717302469193170081067353390616412160000 R=13602934789834170625/16620815899787526144 = 0.818428
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [41]) |A|=12 |B|=12 coef(L)=[11] coef(nonL)=[12] c0=24 gram_ok=True zero_offdiag=1250 |det|=1841008844554629333210549988809234186240000 R=4589984880625/5467277940768 = 0.839538
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [41]) |A|=11 |B|=12 coef(L)=[10] coef(nonL)=[11] c0=23 gram_ok=True zero_offdiag=1250 |det|=1794717302469193170081067353390616412160000 R=13602934789834170625/16620815899787526144 = 0.818428
+  Class 5: j-count 1 (j=1:False, j=-1:False, first [43]) |A|=12 |B|=12 coef(L)=[11] coef(nonL)=[12] c0=24 gram_ok=True zero_offdiag=1250 |det|=1841008844554629333210549988809234186240000 R=4589984880625/5467277940768 = 0.839538
+  Class 6: j-count 1 (j=1:False, j=-1:False, first [43]) |A|=11 |B|=12 coef(L)=[10] coef(nonL)=[11] c0=23 gram_ok=True zero_offdiag=1250 |det|=1794717302469193170081067353390616412160000 R=13602934789834170625/16620815899787526144 = 0.818428
+  Class 5: j-count 1 (j=1:False, j=-1:True, first [47]) |A|=12 |B|=12 coef(L)=[11] coef(nonL)=[12] c0=24 gram_ok=True zero_offdiag=1250 |det|=1841008844554629333210549988809234186240000 R=4589984880625/5467277940768 = 0.839538
+  Class 6: j-count 1 (j=1:False, j=-1:True, first [47]) |A|=11 |B|=12 coef(L)=[10] coef(nonL)=[11] c0=23 gram_ok=True zero_offdiag=1250 |det|=1794717302469193170081067353390616412160000 R=13602934789834170625/16620815899787526144 = 0.818428
+  cpu 0.5s

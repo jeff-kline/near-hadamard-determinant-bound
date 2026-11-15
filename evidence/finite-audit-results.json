@@ -1,0 +1,85 @@
+{
+  "coverage_count": 89,
+  "resultants_checked": 178,
+  "minima": [
+    {
+      "class_number": 5,
+      "q": 37,
+      "n": 38,
+      "ratio_exact": "690199704608000/846441320833557",
+      "ratio_display": 0.8154135291130475
+    },
+    {
+      "class_number": 6,
+      "q": 49,
+      "n": 50,
+      "ratio_exact": "13602934789834170625/16620815899787526144",
+      "ratio_display": 0.8184276194292042
+    }
+  ],
+  "dense": [
+    {
+      "q": 29,
+      "class": 5,
+      "passed": true
+    },
+    {
+      "q": 29,
+      "class": 6,
+      "passed": true
+    },
+    {
+      "q": 49,
+      "class": 5,
+      "passed": true
+    },
+    {
+      "q": 49,
+      "class": 6,
+      "passed": true
+    },
+    {
+      "q": 125,
+      "class": 5,
+      "passed": true
+    },
+    {
+      "q": 125,
+      "class": 6,
+      "passed": true
+    },
+    {
+      "q": 625,
+      "class": 5,
+      "passed": true
+    },
+    {
+      "q": 625,
+      "class": 6,
+      "passed": true
+    },
+    {
+      "q": 729,
+      "class": 5,
+      "passed": true
+    },
+    {
+      "q": 729,
+      "class": 6,
+      "passed": true
+    },
+    {
+      "q": 997,
+      "class": 5,
+      "passed": true
+    },
+    {
+      "q": 997,
+      "class": 6,
+      "passed": true
+    }
+  ],
+  "certificate_sha256": "7dea51568db8607302b67f53fdaab25844a2bb2431901870992aed1b68b301fe",
+  "cpu_seconds": 88.792641,
+  "wall_seconds": 89.27432968304493
+}
