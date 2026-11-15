@@ -1,12 +1,12 @@
 # Admission record
 
-**Current state:** DRAFT (ready to freeze as CANDIDATE)
+**Current state:** CANDIDATE (claims frozen; not tagged)
 
 **Version:** 0.1.0
 
 **Standard:** [A Public Standard for This Work](https://jeff-kline.github.io/posts/research-program/index.html)
 
-Current verdict: NOT YET ADMITTED (no commit, tag, archive or DOI)
+Current verdict: NOT YET ADMITTED (no tag, archive or DOI)
 
 Admission is a project release decision. It is not peer review, a correctness
 certificate, or proof of global novelty.
@@ -63,7 +63,7 @@ the author's explicit acceptance before tagging.
 
 | Check | Status | Evidence or residual |
 |---|---|---|
-| Reproduction | PENDING | repeat `make paper`, `check`, `verify`, `infimum`, `rebuild` and the manifest check on a `git archive` extraction of the frozen commit |
+| Reproduction | PASS | on 2026-11-15, a `git archive` extraction of commit `ed79d31` reproduced `paper/main.pdf` byte for byte (SHA-256 `48cd9e88…a599`); `make check` PASS; `make verify` and `make infimum` passed and matched the pinned certificates; `make rebuild` output equal to `evidence/independent-rebuild.log`; manifest check all OK. The candidate commit differs from `ed79d31` only in this file and its manifest line |
 | Artifact integrity | PASS (local) | deterministic PDF (fixed `SOURCE_DATE_EPOCH`); `MANIFEST.sha256` covers every tracked file |
 | Hygiene | PASS | tree scanned for local paths and private data (ledger H1). README rendered with `gh api markdown` (GFM) on 2026-11-15: 56 inline and 1 display math elements, matching the source |
 | Stewardship | PASS | `CORRECTIONS.md` |
@@ -75,8 +75,8 @@ the author's explicit acceptance before tagging.
 
 | Action | Owner | Status |
 |---|---|---|
-| Local candidate commit | root agent, author authorization | not yet authorized |
-| Private GitHub repository and push | author authorization | not yet authorized |
+| Local candidate commit | root agent, author authorization | done 2026-11-15 (authorized) |
+| Private GitHub repository and push | author authorization | done 2026-11-15 (authorized): private `jeff-kline/near-hadamard-determinant-bound`, issues on, wiki off |
 | Public visibility; secret scanning and push protection | author authorization | not yet authorized |
 | Zenodo enablement before the Release | author, in the Zenodo portal | not done |
 | Annotated tag `v0.1.0`, GitHub Release | author authorization | not authorized |
