@@ -2,7 +2,8 @@
 
 **Verdict: novelty unconfirmed.** No earlier proof of the 0.8 bound or of the
 exact infima for Classes (4)–(6) was found in the sources checked. The full
-text of the closest follow-up, Li–Momihara–Xiang (2026), has not been read, so
+text of the closest follow-up, Li–Momihara–Xiang (2026), was not openly
+accessible at the time of writing (paywalled; no open copy found), so
 overlap with it is not excluded. This record bounds the search; it is not a
 worldwide novelty claim, and no priority is claimed.
 

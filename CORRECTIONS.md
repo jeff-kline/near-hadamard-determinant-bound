@@ -20,14 +20,26 @@ claims and artifacts.
 - If earlier work is found that anticipates a result here, the novelty
   statements will be narrowed and the source credited in a new version. In
   particular, the full text of Li, Momihara and Xiang (2027; online August
-  2026) had not been read
-  at release; see [audit/PRIOR-ART.md](audit/PRIOR-ART.md).
+  2026) was not openly
+  accessible at release; see [audit/PRIOR-ART.md](audit/PRIOR-ART.md).
 
 Suspected errors may be reported through the repository's issue tracker:
 <https://github.com/jeff-kline/near-hadamard-determinant-bound/issues>.
 
 ## Version history
 
-### 0.1.0 — release candidate
+### 0.1.0 — released 2026-11-15
 
-- Not yet tagged.
+- Tag `v0.1.0` at commit `7fb488d`; version DOI
+  [`10.5281/zenodo.24265533`](https://doi.org/10.5281/zenodo.24265533), concept DOI `10.5281/zenodo.24265532`. Zenodo
+  records the publication date as 2026-11-16 (UTC).
+- The tagged snapshot retains its prepublication “release candidate” wording
+  and carries no DOI, because the DOI was minted by Zenodo after the GitHub
+  Release. The living repository and paper now carry the active DOI; the
+  archived files were not changed.
+- After the tag, the living README, `CITATION.cff` and `audit/PRIOR-ART.md`
+  say that the Li–Momihara–Xiang full text "was not openly accessible at the
+  time of writing" instead of "has not been read". Both describe the same
+  fact: the paper is paywalled and no open copy was found.
+- Release preparation, before the tag: the dispositions of all audit findings
+  are in `audit/LEDGER.md`.

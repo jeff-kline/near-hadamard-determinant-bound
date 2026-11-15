@@ -2,16 +2,23 @@
 
 Jeffery Kline
 
-**Version 0.1.0 — release candidate, not yet published.** No public tag or
-DOI exists yet. Admission under the project's
+[![Version DOI: 10.5281/zenodo.24265533](https://zenodo.org/badge/DOI/10.5281/zenodo.24265533.svg)](https://doi.org/10.5281/zenodo.24265533)
+
+**Status: version 0.1.0 admitted 2026-11-15.** The immutable release is
+[`v0.1.0`](https://github.com/jeff-kline/near-hadamard-determinant-bound/releases/tag/v0.1.0),
+archived at version DOI [`10.5281/zenodo.24265533`](https://doi.org/10.5281/zenodo.24265533). The concept DOI
+[`10.5281/zenodo.24265532`](https://doi.org/10.5281/zenodo.24265532) resolves to the latest version; cite the
+version DOI for reproducibility. Admission under the project's
 [public research standard](https://jeff-kline.github.io/posts/research-program/index.html)
-is a release decision, not peer review or a correctness certificate. The
-release checklist is [ADMISSION.md](ADMISSION.md).
+is a release decision, not peer review or a correctness certificate; see
+[ADMISSION.md](ADMISSION.md). The tagged snapshot retains its prepublication
+“release candidate” wording because the DOI did not exist when it was made.
 
 The paper is [paper/main.pdf](paper/main.pdf); its source is
 [paper/main.tex](paper/main.tex). **Novelty is unconfirmed:** the full text
-of a closely related paper by Li, Momihara and Xiang, published online in 2026, has not been read
-(see [Earlier work](#earlier-work)).
+of a closely related paper by Li, Momihara and Xiang, published online in
+2026, was not openly accessible at the time of writing (see
+[Earlier work](#earlier-work)).
 
 ## Introduction
 
@@ -88,7 +95,8 @@ Not new:
 
 These statements rest on a bounded comparison recorded in
 [audit/PRIOR-ART.md](audit/PRIOR-ART.md). We have not found the results above
-in the sources checked, but one closely related paper is unread; this is
+in the sources checked, but the full text of one closely related paper was
+not openly accessible at the time of writing; this is
 not a novelty claim.
 
 ## Earlier work
@@ -179,7 +187,7 @@ outputs and environment.
 ## Citation
 
 Jeffery Kline, *Sharp determinant bounds for three near-Hadamard families*,
-version 0.1.0 (2026). Machine-readable metadata is in
+version 0.1.0 (2026), doi:[10.5281/zenodo.24265533](https://doi.org/10.5281/zenodo.24265533). Machine-readable metadata is in
 [CITATION.cff](CITATION.cff).
 
 ## License and corrections

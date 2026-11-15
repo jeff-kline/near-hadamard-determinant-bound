@@ -9,6 +9,15 @@ authors:
 repository-code: "https://github.com/jeff-kline/near-hadamard-determinant-bound"
 url: "https://github.com/jeff-kline/near-hadamard-determinant-bound"
 license: GPL-3.0-only
+doi: 10.5281/zenodo.24265533
+date-released: 2026-11-16
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24265533
+    description: "Version DOI for release 0.1.0"
+  - type: doi
+    value: 10.5281/zenodo.24265532
+    description: "Concept DOI; resolves to the latest version"
 abstract: >-
   Momihara, Suda and Xiang built three families of +-1 matrices, Classes
   (4)-(6) of their Theorem 1.6, with orders n = q+1 for prime powers
@@ -21,7 +30,7 @@ abstract: >-
   moment identities from character orthogonality and the size of a Gauss
   sum, with exact integer and ball-arithmetic certificates for the finite
   range. Novelty is unconfirmed: the full text of a 2026 paper by Li,
-  Momihara and Xiang was not read.
+  Momihara and Xiang was not openly accessible at the time of writing.
 keywords:
   - Hadamard matrices
   - maximal determinant

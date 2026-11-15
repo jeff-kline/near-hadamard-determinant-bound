@@ -78,3 +78,7 @@ Results on 2026-11-15, one processor core:
 - The ball arithmetic proves inequalities; the minima themselves are exact
   rationals taken from the exact certificates.
 - None of these commands checks a proof.
+
+After admission, the living `paper/main.pdf` carries the version DOI on its
+title page and so differs from the tagged PDF above. Rebuilt the same way,
+it has SHA-256 `40a2f86208ab832eb4d5f7fa22a0ec60281051300713d3350672a0aa29c49605`.

@@ -1,12 +1,16 @@
 # Admission record
 
-**Current state:** CANDIDATE (claims frozen; not tagged)
+**Current state:** ADMITTED
 
 **Version:** 0.1.0
 
+**Tag:** `v0.1.0` → `7fb488ddfd7a76cae6218b31f537e5199fe8519d`
+
 **Standard:** [A Public Standard for This Work](https://jeff-kline.github.io/posts/research-program/index.html)
 
-Current verdict: NOT YET ADMITTED (no tag, archive or DOI)
+Current verdict: ADMITTED (2026-11-15)
+
+**Version DOI:** [`10.5281/zenodo.24265533`](https://doi.org/10.5281/zenodo.24265533) · **Concept DOI:** `10.5281/zenodo.24265532` · **Record:** <https://zenodo.org/records/24265533>
 
 Admission is a project release decision. It is not peer review, a correctness
 certificate, or proof of global novelty.
@@ -69,9 +73,15 @@ stated with a pointer in the paper, README, CITATION.cff and
 | Artifact integrity | PASS (local) | deterministic PDF (fixed `SOURCE_DATE_EPOCH`); `MANIFEST.sha256` covers every tracked file |
 | Hygiene | PASS | tree scanned for local paths and private data (ledger H1). README rendered with `gh api markdown` (GFM) on 2026-11-15: 56 inline and 1 display math elements, matching the source |
 | Stewardship | PASS | `CORRECTIONS.md` |
-| Tag, archive, DOI, metadata | NOT STARTED | require the author's authorization |
+| Immutable semantic tag | PASS | annotated `v0.1.0` (object `f81231e`) → `7fb488d`; tagger is the GitHub noreply identity. The tagged tree's paper was rebuilt from the Zenodo archive to the archived PDF byte for byte, and `make check` and the manifest pass there; the computational files are unchanged since `ed79d31` |
+| Public permanent archive with provider byte identity | PASS | the pinned GitHub `zipball/v0.1.0` (downloaded twice, identical) and the Zenodo file are byte-identical: 812,435 bytes, SHA-256 `da00dc98a986fb670343750bfc76c07c4282603c429423167c9db23c70ee486a`; Zenodo MD5 `57323013fb510772e811d2aeb26445f6` |
+| DOI resolves; living repository identifies the version | PASS | `doi.org/10.5281/zenodo.24265533` redirects to the Zenodo record; README, `CITATION.cff` and the living paper carry the version DOI |
+| Archive metadata matches repository | PASS | title, creator Kline, Jeffery, version v0.1.0, publication date 2026-11-16 (UTC), license `gpl-3.0`, resource type software, open access, related identifier the `v0.1.0` tree |
+| Machine-readable citation | PASS | `CITATION.cff` with version DOI, concept DOI and `date-released: 2026-11-16` (Zenodo's date) |
 
-**Admission verdict:** NOT YET ADMITTED.
+**R1 gate:** PASS.
+
+**Admission verdict:** ADMITTED (2026-11-15). The accepted P1 residual and the residual risks in `audit/LEDGER.md` remain.
 
 ## External actions
 
@@ -80,9 +90,22 @@ stated with a pointer in the paper, README, CITATION.cff and
 | Local candidate commit | root agent, author authorization | done 2026-11-15 (authorized) |
 | Private GitHub repository and push | author authorization | done 2026-11-15 (authorized): private `jeff-kline/near-hadamard-determinant-bound`, issues on, wiki off |
 | Public visibility; secret scanning and push protection | author authorization | done 2026-11-15 (authorized): public; secret scanning and push protection enabled, as for the predecessor |
-| Zenodo enablement before the Release | author, in the Zenodo portal | not done |
-| Annotated tag `v0.1.0`, GitHub Release | author authorization | not authorized |
-| Public-site listing; living-metadata update | author authorization (admission bundle) | not authorized |
+| Zenodo enablement before the Release | author, in the Zenodo portal | done 2026-11-15; Zenodo release webhook present and active |
+| Annotated tag `v0.1.0`, GitHub Release | author authorization | done 2026-11-15 (23:32 UTC): Release "Version 0.1.0" |
+| Public-site listing | author authorization (admission bundle) | done 2026-11-15: landing entry "The 0.8 bound for near-Hadamard determinants" at <https://jeff-kline.github.io/> (site commit `2ba2e68`); Pages build and live HTML checked for title, blurb, repository link and version DOI |
+| Living-metadata update (this commit) | author authorization (admission bundle) | done 2026-11-15, pushed after the site listing was verified live |
 
-Archive route (proposed, as for the predecessor): Zenodo GitHub integration,
-with no manual deposit.
+## Archive verification
+
+- Route: Zenodo GitHub integration; no manual deposit.
+- Pinned before the GitHub Release: GitHub API `zipball/v0.1.0`, downloaded
+  twice, identical, 812,435 bytes, SHA-256 `da00dc98a986fb670343750bfc76c07c4282603c429423167c9db23c70ee486a`.
+- Zenodo file `jeff-kline/near-hadamard-determinant-bound-v0.1.0.zip`,
+  downloaded through the record's file link: identical to the pinned zipball.
+  Every file passes its `MANIFEST.sha256`.
+- Separate determinism check: `git archive --format=zip
+  --prefix=near-hadamard-determinant-bound-v0.1.0/ v0.1.0`, generated twice,
+  identical, 811,259 bytes, SHA-256 `180c68748ebe35bc5cb53ffb714f6fbce28ef669601f0684db06dfec62874f6b`. This is a different file from
+  the provider zipball and is not compared with it.
+- Mechanical audit at the archived state, on the unchanged tagged tree:
+  11 pass, 0 warnings, 0 fail.
