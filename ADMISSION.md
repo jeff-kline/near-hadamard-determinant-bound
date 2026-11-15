@@ -39,8 +39,10 @@ new construction or record determinant is claimed.
 | Inaccessible or unperformed searches visible | PASS | Google Scholar, MathSciNet, zbMATH and the LMX full text logged NOT PERFORMED |
 | Fast-follow scan within 7 days of tagging | PASS for 2026-11-15 | must be repeated if tagging happens after 2026-11-22 |
 
-**P1 gate:** PARTIAL. The named residual (Li–Momihara–Xiang full text) needs
-the author's explicit acceptance before tagging.
+**P1 gate:** PARTIAL, residual accepted. On 2026-11-15 the author explicitly
+accepted the named residual (Li–Momihara–Xiang full text unread), which is
+stated with a pointer in the paper, README, CITATION.cff and
+`audit/PRIOR-ART.md`.
 
 ## A1 — claim and artifact consistency
 
@@ -77,7 +79,7 @@ the author's explicit acceptance before tagging.
 |---|---|---|
 | Local candidate commit | root agent, author authorization | done 2026-11-15 (authorized) |
 | Private GitHub repository and push | author authorization | done 2026-11-15 (authorized): private `jeff-kline/near-hadamard-determinant-bound`, issues on, wiki off |
-| Public visibility; secret scanning and push protection | author authorization | not yet authorized |
+| Public visibility; secret scanning and push protection | author authorization | done 2026-11-15 (authorized): public; secret scanning and push protection enabled, as for the predecessor |
 | Zenodo enablement before the Release | author, in the Zenodo portal | not done |
 | Annotated tag `v0.1.0`, GitHub Release | author authorization | not authorized |
 | Public-site listing; living-metadata update | author authorization (admission bundle) | not authorized |
