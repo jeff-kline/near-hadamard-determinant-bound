@@ -63,7 +63,7 @@ the author's explicit acceptance before tagging.
 
 | Check | Status | Evidence or residual |
 |---|---|---|
-| Reproduction | PASS | on 2026-11-15, a `git archive` extraction of commit `ed79d31` reproduced `paper/main.pdf` byte for byte (SHA-256 `48cd9e88…a599`); `make check` PASS; `make verify` and `make infimum` passed and matched the pinned certificates; `make rebuild` output equal to `evidence/independent-rebuild.log`; manifest check all OK. The candidate commit differs from `ed79d31` only in this file and its manifest line |
+| Reproduction | PASS | on 2026-11-15, a `git archive` extraction of commit `ed79d31` reproduced `paper/main.pdf` byte for byte (SHA-256 `48cd9e88…a599`); `make check` PASS; `make verify` and `make infimum` passed and matched the pinned certificates; `make rebuild` output equal to `evidence/independent-rebuild.log`; manifest check all OK. After that run the author asked for a plainer abstract and README introduction; the claims are unchanged (ledger U1). The revised paper was rebuilt twice with identical output, SHA-256 `070ade1a…17e2`, and `make check` passed. The computational files are unchanged since `ed79d31` |
 | Artifact integrity | PASS (local) | deterministic PDF (fixed `SOURCE_DATE_EPOCH`); `MANIFEST.sha256` covers every tracked file |
 | Hygiene | PASS | tree scanned for local paths and private data (ledger H1). README rendered with `gh api markdown` (GFM) on 2026-11-15: 56 inline and 1 display math elements, matching the source |
 | Stewardship | PASS | `CORRECTIONS.md` |

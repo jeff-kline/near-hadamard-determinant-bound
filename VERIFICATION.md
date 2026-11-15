@@ -54,7 +54,7 @@ shasum -a 256 -c MANIFEST.sha256
 Results on 2026-11-15, one processor core:
 
 - `make paper`: two consecutive builds gave the same `paper/main.pdf`,
-  SHA-256 `48cd9e88c9f598604e2d0e7c939dd781298f835c004e219ebdc8c3e98728a599`,
+  SHA-256 `070ade1a57eda5f40eba890ddd678f37f361dc9fdfa8fa4c4910adfe5ee317e2`,
   9 pages, no warnings.
 - `make check`: `"status": "PASS"`, 9 pages, 30 labels, 27 references,
   4 bibliography entries, all 4 cited, no errors.

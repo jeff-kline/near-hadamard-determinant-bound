@@ -10,15 +10,14 @@ repository-code: "https://github.com/jeff-kline/near-hadamard-determinant-bound"
 url: "https://github.com/jeff-kline/near-hadamard-determinant-bound"
 license: GPL-3.0-only
 abstract: >-
-  A paper and release repository on three families of +-1 matrices of order
-  n = q+1, q = 1 mod 4 a prime power, constructed by Momihara, Suda and Xiang
-  (Classes (4)-(6) of their Theorem 1.6). For every n >= 30, each matrix in
-  the three families has determinant larger in absolute value than 0.8 times
-  the Ehlich-Wojtas bound W_n = (2n-2)(n-2)^((n-2)/2), answering the 0.8
-  question of their Problem 7.1, which is Problem 15 of a 2026 survey. The
-  ratio to W_n tends to sqrt(e)/2, and the smallest ratios over n >= 30 are
-  about 0.8169, 0.8154 and 0.8184, attained only at n = 30, 38 and 50; these
-  are the best constant lower bounds for each family. The proof uses two exact
+  Momihara, Suda and Xiang built three families of +-1 matrices, Classes
+  (4)-(6) of their Theorem 1.6, with orders n = q+1 for prime powers
+  q = 1 mod 4. They asked whether each determinant is at least 0.8 times the
+  Ehlich-Wojtas bound W_n = (2n-2)(n-2)^((n-2)/2) for every n >= 30 (the 0.8
+  question of their Problem 7.1, which is Problem 15 of a 2026 survey). This
+  paper proves that it is. In each family the ratio to W_n tends to
+  sqrt(e)/2, and the smallest ratios over n >= 30 are about 0.8169, 0.8154
+  and 0.8184, reached only at n = 30, 38 and 50. The proof uses two exact
   moment identities from character orthogonality and the size of a Gauss
   sum, with exact integer and ball-arithmetic certificates for the finite
   range. Novelty is unconfirmed: the full text of a 2026 paper by Li,

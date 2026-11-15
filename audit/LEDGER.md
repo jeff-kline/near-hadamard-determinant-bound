@@ -45,6 +45,7 @@ documentation.
 | M4 | proof | "several hours" for exact computation had no recorded measurement | documentation | Fixed: measured about two minutes per exact determinant at q ≈ 10^4 |
 | M5 | proof | `infimum_check.py` checked only ≥ for the non-minimizing Class (4) sign at q = 29 | documentation | Fixed: strict comparison everywhere except the minimizer, and exactly one minimizer per class asserted; rerun passed |
 | R1 | rebuild | none | — | Rebuild code added as `scripts/independent_rebuild.py` (`make rebuild`) |
+| U1 | author | Abstract and README introduction opened with a negative sentence introduced $q$ before the orders it defines, and did not say what the earlier constructions achieved | documentation | Rewritten plainly in the paper abstract, README introduction and CITATION.cff abstract; no claim, number or qualification changed |
 | H1 | root | Pinned certificates recorded a local interpreter path; audit reports named local directories | documentation | Removed the `executable` field from the pinned certificates (the comparison ignores it) and replaced local paths in the reports with repository-relative paths or placeholders; no other change to the reports |
 
 ## Residual risks
